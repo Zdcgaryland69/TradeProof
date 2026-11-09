@@ -1,12 +1,12 @@
 # Devpost project text — DRAFT for the author's review (9 Nov 2026, SGT)
 
-Status: draft. Not submitted. Placeholders in `<…>` must be filled by the author; no link below is live yet.
+Status: final text for the form. **Not submitted** — the author submits it. Repository and video links are live (published 9 Nov 2026).
 Section headings below are Devpost's standard form prompts; TradeProof is a one-person project.
 
 - **Project name:** TradeProof
 - **Tagline (≤ 60 chars):** Check quotes, approve exact terms, pay via PayPal Sandbox
-- **Repository:** `<public GitHub repository URL — not created yet>`
-- **Video:** `<YouTube URL — not uploaded yet>`
+- **Repository:** https://github.com/Zdcgaryland69/TradeProof
+- **Video:** https://youtu.be/UOTZpzaLUCY
 - **Built with:** PayPal Developer Platform (Sandbox, Orders v2, `@paypal/paypal-server-sdk`), Anthropic Claude API
   (`@anthropic-ai/sdk`, model `claude-sonnet-5-5`), Next.js, React, TypeScript, SQLite (`node:sqlite`), Node.js
 - **Sponsor tools selected:** none (author's decision, 9 Nov 2026). *Author note, not for the form:* the official PayPal

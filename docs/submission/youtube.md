@@ -1,6 +1,6 @@
 # YouTube publishing material — DRAFT for the author's review (9 Nov 2026, SGT)
 
-Status: draft. **Not uploaded.** The author uploads from their own YouTube account. Placeholders in `<…>`.
+Status: **published publicly on 9 Nov 2026** on the author's channel — https://youtu.be/UOTZpzaLUCY (publication record below).
 
 ## Video and captions (final, accepted by the author on 9 Nov 2026)
 
@@ -41,6 +41,20 @@ per the page, does not limit reach or monetisation — either answer is consiste
 **Author's decision (9 Nov 2026): answer "Yes"** to the AI-use / altered-or-synthetic-content question when the
 video is uploaded (the narration is synthetic). This records the answer only; uploading is a separate authorisation.
 
+## Publication record (9–10 Nov 2026)
+
+| Item | Value (checked signed out unless noted) |
+| --- | --- |
+| Video | https://youtu.be/UOTZpzaLUCY — public, playable, 157 s (file 156.672 s), category Science & Technology |
+| Uploaded file | `tradeproof-demo-v2b-t4-af_heart-2026-11-09.mp4`, SHA-256 checked before upload (`bea6513b…0942`) |
+| Title | identical to the title below (70 characters) |
+| Description | the text below with only the documentation's hard line wraps removed (paragraphs, bullets and chapter lines kept); wording verified identical; the repository link is clickable |
+| Captions | English track uploaded from `tradeproof-demo-v2b-t4-af_heart-2026-11-09.srt` (SHA-256 `767d4a62…013b`); all 31 cues matched in the caption editor before saving; Studio shows it published; listed on the public page (YouTube's caption download returned no content to a plain signed-out request, so the public text was not compared again) |
+| Cover | cover A (public thumbnail matches visually; YouTube re-encodes it) |
+| Settings (Studio, signed in) | audience: not made for kids; altered or synthetic content: **Yes**; video language English; paid promotion left unanswered (YouTube default) |
+| Synthetic-content label | not seen in the signed-out page HTML at the time of the check (YouTube may add it later or render it client-side) |
+| Visibility | set to Public in the author's signed-in Studio session (not by the automation) |
+
 ## Title (≤ 100 characters; counts measured)
 
 Chosen by the author (9 Nov 2026):
@@ -79,7 +93,7 @@ What you see
 - Tested separately (not one end-to-end run): a real model on synthetic quotes and Copilot test cases, and real PayPal
   Sandbox payments (USD 1.00; USD 12.00 after a human approval).
 
-Code (MIT licence) and run instructions: <public GitHub repository URL>
+Code (MIT licence) and run instructions: https://github.com/Zdcgaryland69/TradeProof
 
 Built with: PayPal Developer Platform (Sandbox, Orders v2), Anthropic Claude API, Next.js, React, TypeScript, SQLite.
 Developed with Claude Code (AI coding assistant) and ChatGPT (planning and review).

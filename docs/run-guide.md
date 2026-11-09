@@ -26,7 +26,7 @@ Prerequisites: Node.js ≥ 22.18 (LTS recommended), Git, a modern browser. No gl
 PowerShell:
 
 ```powershell
-git clone <repository-url> TradeProof
+git clone https://github.com/Zdcgaryland69/TradeProof.git TradeProof
 cd TradeProof
 node --version          # must be v22.18.0 or newer
 npm.cmd ci              # installs exactly the versions in package-lock.json
@@ -35,7 +35,7 @@ npm.cmd ci              # installs exactly the versions in package-lock.json
 Git Bash:
 
 ```bash
-git clone <repository-url> TradeProof
+git clone https://github.com/Zdcgaryland69/TradeProof.git TradeProof
 cd TradeProof
 node --version
 npm ci

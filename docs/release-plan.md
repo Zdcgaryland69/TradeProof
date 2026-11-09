@@ -278,11 +278,14 @@ release code (read-only, no code changed):
 
 | Step | Status |
 | --- | --- |
-| Create the public GitHub repository `TradeProof` under the author's own account | authorised 9 Nov — after the author confirms the account |
-| Push the cleaned, manifest-matched release repository (never the development history; no force-push) | authorised 9 Nov — same condition |
-| Upload the accepted video publicly to the author's YouTube channel with the approved title, description, English captions, cover A and AI-use answer Yes | authorised 9 Nov — after the author confirms the channel |
-| Replace link placeholders with the real public links and push the update as a normal new commit | authorised 9 Nov |
+| Create the public GitHub repository `TradeProof` under the author's own account | **done** 9 Nov — https://github.com/Zdcgaryland69/TradeProof (account confirmed by the author) |
+| Push the cleaned, manifest-matched release repository (never the development history; no force-push) | **done** 9 Nov — initial commit `2581ed0`, normal push |
+| Upload the accepted video publicly to the author's YouTube channel with the approved title, description, English captions, cover A and AI-use answer Yes | **done** 9–10 Nov — https://youtu.be/UOTZpzaLUCY (channel confirmed by the author); record in `docs/submission/youtube.md` |
+| Replace link placeholders with the real public links and push the update as a normal new commit | **done** — this update, normal commit |
 | Fill in the Devpost form | preparation only; **not** submitted, eligibility not confirmed on the author's behalf |
+
+Option A (temporarily removing the repository line from the YouTube description) was authorised but **not used**: the
+video was already public with the full approved description and a clickable link when it was checked.
 
 After publication the public history is never amended or force-pushed. Sign-in, captcha and account verification
 are done by the author; no password or token is requested.

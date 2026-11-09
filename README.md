@@ -8,7 +8,7 @@ canned AI output, no API keys, no external calls. With your own keys, TradeProof
 Claude model and the real PayPal **Sandbox** (see [Modes at a glance](#modes-at-a-glance)). Payments are PayPal
 Sandbox only: no real money and no PayPal **Live** (production) code path.
 
-> Demo video: `<YouTube link — to be added after upload>` · Licence: [MIT](LICENSE) · Third-party notices:
+> Demo video: [TradeProof — MOCK demo on YouTube](https://youtu.be/UOTZpzaLUCY) · Repository: <https://github.com/Zdcgaryland69/TradeProof> · Licence: [MIT](LICENSE) · Third-party notices:
 > [`docs/credits.md`](docs/credits.md)
 
 ## The problem
@@ -77,7 +77,7 @@ Requirements: **Node.js 22.18 or newer** (verified with Node 24.19.0 / npm 11.17
 **Windows PowerShell** (use `npm.cmd`; PowerShell may block the `npm.ps1` shim):
 
 ```powershell
-git clone <repository-url> TradeProof
+git clone https://github.com/Zdcgaryland69/TradeProof.git TradeProof
 cd TradeProof
 npm.cmd ci
 npm.cmd run mock:accounts     # creates buyer-a, buyer-b, approver; type each password twice (hidden, min 12 chars)
@@ -89,7 +89,7 @@ npm.cmd run mock:close        # after stopping: checkpoint and close the MOCK da
 **Git Bash / macOS / Linux shells** (same commands with `npm`; only Windows was tested):
 
 ```bash
-git clone <repository-url> TradeProof
+git clone https://github.com/Zdcgaryland69/TradeProof.git TradeProof
 cd TradeProof
 npm ci
 npm run mock:accounts
