@@ -1,0 +1,47 @@
+{
+  "_notice": "SYNTHETIC / DEMO — fictional quotes for TradeProof's real-model extraction acceptance (25 Oct 2026). No real supplier, buyer or price. Expected results: expected.md (written before any real call).",
+  "cases": [
+    {
+      "id": "LA-1",
+      "title": "[SYNTHETIC / LIVE TEST] LA-1 normal complete quote",
+      "items": [{ "name": "Stainless steel water bottle 500 ml", "quantity": "200", "unit": "pcs", "material": "304 stainless steel" }],
+      "versions": [{ "file": "la-1-normal.synthetic.md", "contentKind": "FULL_QUOTE" }],
+      "extract": 0
+    },
+    {
+      "id": "LA-2",
+      "title": "[SYNTHETIC / LIVE TEST] LA-2 number confusion",
+      "items": [{ "name": "Insulated bottle 500 ml", "quantity": "500", "unit": "pcs" }],
+      "versions": [{ "file": "la-2-numbers.synthetic.md", "contentKind": "FULL_QUOTE" }],
+      "extract": 0
+    },
+    {
+      "id": "LA-3",
+      "title": "[SYNTHETIC / LIVE TEST] LA-3 multi-item cross references",
+      "items": [
+        { "name": "Bamboo lunch box, 2-tier", "quantity": "300", "unit": "sets" },
+        { "name": "Bamboo cutlery set", "quantity": "600", "unit": "sets" }
+      ],
+      "versions": [{ "file": "la-3-multi-item.synthetic.md", "contentKind": "FULL_QUOTE" }],
+      "extract": 0
+    },
+    {
+      "id": "LA-4",
+      "title": "[SYNTHETIC / LIVE TEST] LA-4 supplement linked to v1",
+      "items": [{ "name": "Cotton tote bag", "quantity": "1000", "unit": "pcs" }],
+      "versions": [
+        { "file": "la-4-v1.synthetic.md", "contentKind": "FULL_QUOTE" },
+        { "file": "la-4-v2.synthetic.md", "contentKind": "FULL_QUOTE" },
+        { "file": "la-4-v3-supplement.synthetic.md", "contentKind": "SUPPLEMENT", "supplements": 0 }
+      ],
+      "extract": 2
+    },
+    {
+      "id": "LA-5",
+      "title": "[SYNTHETIC / LIVE TEST] LA-5 missing or vague fees and terms",
+      "items": [{ "name": "Ceramic mug 350 ml", "quantity": "400", "unit": "pcs" }],
+      "versions": [{ "file": "la-5-vague.synthetic.md", "contentKind": "FULL_QUOTE" }],
+      "extract": 0
+    }
+  ]
+}

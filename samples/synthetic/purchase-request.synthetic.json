@@ -1,0 +1,28 @@
+{
+  "_notice": "SYNTHETIC / DEMO DATA — fictional, for TradeProof testing only",
+  "request_id": "PR-DEMO-0001",
+  "buyer": {
+    "company": "Lumen Craft Studio Pte. Ltd. (fictional)",
+    "contact": "Demo Buyer",
+    "country": "SG"
+  },
+  "item": {
+    "name": "Stainless steel insulated bottle",
+    "spec": {
+      "material": "304 stainless steel",
+      "capacity_ml": 500,
+      "color": "Matte black",
+      "logo": "Laser engraving, 1 colour"
+    },
+    "quantity": 500,
+    "unit": "pcs"
+  },
+  "budget": {
+    "currency": "USD",
+    "max_unit_price": 3.6,
+    "max_total": 1800.0
+  },
+  "incoterm": "FOB Ningbo",
+  "required_ship_date": "2026-12-10",
+  "payment_terms_accepted": "30% deposit, 70% before shipment"
+}

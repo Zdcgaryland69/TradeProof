@@ -1,0 +1,109 @@
+{
+  "_notice": "SYNTHETIC / DEMO — MOCK model output, hand-written for supplier-quote-revised.synthetic.md (3 Nov 2026: revised sample-order quote so a MOCK demo can reach approval and MOCK payment). Used only when AI_PROVIDER=mock (local dev) and in tests. Not produced by any AI.",
+  "textSha256": "c294023191b9422826aabf97a3b9c6a447e9f48dddf3427dfb3881111048dd86",
+  "matchNamePattern": "bottle|保温杯",
+  "output": {
+    "supplierQuoteNumbers": [
+      {
+        "value": "QT-DEMO-2026-118-R1",
+        "quote": "报价编号：QT-DEMO-2026-118-R1"
+      }
+    ],
+    "quoteDate": {
+      "value": "2026-11-03",
+      "quote": "日期：2026-11-03"
+    },
+    "currency": {
+      "value": "USD",
+      "quote": "| 单价 | 美元 3.40 / 个 |"
+    },
+    "items": [
+      {
+        "name": {
+          "value": "不锈钢保温杯",
+          "quote": "| 品名 | 不锈钢保温杯 |"
+        },
+        "quantity": {
+          "value": "20",
+          "quote": "| 数量 | 20 个（样品单） |"
+        },
+        "unit": {
+          "value": "个",
+          "quote": "| 数量 | 20 个（样品单） |"
+        },
+        "material": {
+          "value": "304 不锈钢",
+          "quote": "| 材质 | 304 不锈钢 |"
+        },
+        "specification": {
+          "value": "500 毫升，哑光黑",
+          "quote": "| 规格 | 500 毫升，哑光黑 |"
+        },
+        "logo": {
+          "value": "激光雕刻 1 色",
+          "quote": "| Logo | 激光雕刻 1 色 |"
+        },
+        "unitPrice": {
+          "amount": "3.40",
+          "currency": "USD",
+          "quote": "| 单价 | 美元 3.40 / 个 |"
+        },
+        "requestItemCandidates": []
+      }
+    ],
+    "total": {
+      "amount": "68.00",
+      "currency": "USD",
+      "quote": "| 总价 | 美元 68.00 |"
+    },
+    "incoterm": {
+      "value": "FOB 宁波",
+      "quote": "| 贸易条款 | FOB 宁波 |"
+    },
+    "leadTime": {
+      "value": "收到定金后 15 天",
+      "quote": "| 交期 | 收到定金后 15 天 |"
+    },
+    "paymentTerms": {
+      "value": "100% 定金（预付），发货前付清",
+      "quote": "| 付款方式 | 100% 定金（预付），发货前付清 |"
+    },
+    "fees": [
+      {
+        "kind": {
+          "value": "PACKAGING",
+          "quote": "1. 价格已含出口包装和激光雕刻 Logo。"
+        },
+        "description": {
+          "value": "出口包装",
+          "quote": "1. 价格已含出口包装和激光雕刻 Logo。"
+        },
+        "amount": {
+          "amount": null,
+          "currency": null,
+          "quote": null
+        },
+        "amountBasis": {
+          "value": null,
+          "quote": null
+        },
+        "payer": {
+          "value": null,
+          "quote": null
+        },
+        "payee": {
+          "value": null,
+          "quote": null
+        },
+        "includedInQuote": {
+          "value": "INCLUDED",
+          "quote": "1. 价格已含出口包装和激光雕刻 Logo。"
+        },
+        "statedAs": {
+          "value": null,
+          "quote": null
+        }
+      }
+    ]
+  }
+}

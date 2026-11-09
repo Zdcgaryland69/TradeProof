@@ -1,0 +1,206 @@
+{
+ "_notice": "Raw outputs of the owner-authorised real Copilot RE-RUN of 2 Nov 2026 (claude-sonnet-5-5, SYNTHETIC records), cases L3-L5, verbatim (model output, NOT edited); citation ids replaced by the cited facts semantic keys. recordedValidation = the result under the rules of that run (validator .3). Source: data/live-acceptance/copilot-live-2026-11-02T09-18-44-772Z (Git-ignored).",
+ "cases": {
+  "L3": {
+   "intent": "PAYMENT_AMOUNT",
+   "recordedValidation": {
+    "ok": false,
+    "problems": [
+     "S7:STATE_WITHOUT_FACT:paid"
+    ]
+   },
+   "recordedRules": {
+    "facts": "copilot-facts-2026-11-02.5",
+    "prompt": "copilot-prompt-2026-11-02.2",
+    "validator": "copilot-validator-2026-11-02.3"
+   },
+   "sentences": [
+    {
+     "text": "The proposed amount for a Sandbox payment is USD 12.00, which is the quote's full stated total, to be paid once.",
+     "keys": [
+      "AMOUNT_THIS",
+      "STATED_TOTAL"
+     ]
+    },
+    {
+     "text": "The sum of the quoted item lines is also USD 12.00.",
+     "keys": [
+      "LINES_SUM"
+     ]
+    },
+    {
+     "text": "This is only a proposed amount: no valid approval exists, so it is not payable now and not a payment authorisation.",
+     "keys": [
+      "AMOUNT_THIS",
+      "APPROVAL_NONE"
+     ]
+    },
+    {
+     "text": "TradeProof's current rule check is READY WITH CONFIRMATIONS: no blocking item, and 2 items still have to be confirmed by the approver when approving.",
+     "keys": [
+      "GATE"
+     ]
+    },
+    {
+     "text": "No approver is assigned to this request yet, no approval has been recorded, and no Sandbox payment has been started.",
+     "keys": [
+      "APPROVER_ASSIGNMENT",
+      "APPROVAL_NONE",
+      "PAYMENT_NONE"
+     ]
+    },
+    {
+     "text": "Packing is included in the stated total, but its amount is not stated and the payer and recipient are unknown.",
+     "keys": [
+      "FEE:THIS_VERSION:0"
+     ]
+    },
+    {
+     "text": "Import duties and VAT at destination are an unknown cost and not part of this payment: no amount is stated, the payer is the buyer, and they are paid to the government.",
+     "keys": [
+      "FEE:THIS_VERSION:1"
+     ]
+    },
+    {
+     "text": "Forwarder handling is excluded from this payment: it is an unverified estimate of USD 25.00, payable by the buyer to the carrier.",
+     "keys": [
+      "FEE:THIS_VERSION:2"
+     ]
+    },
+    {
+     "text": "TradeProof does not calculate landed cost (duties, taxes, delivery to the destination) in this version, so the total cost to you is not available.",
+     "keys": [
+      "LANDED"
+     ]
+    }
+   ]
+  },
+  "L4": {
+   "intent": "AFTER_REPLY",
+   "recordedValidation": {
+    "ok": false,
+    "problems": [
+     "S5:STATE_WITHOUT_FACT:question state"
+    ]
+   },
+   "recordedRules": {
+    "facts": "copilot-facts-2026-11-02.5",
+    "prompt": "copilot-prompt-2026-11-02.2",
+    "validator": "copilot-validator-2026-11-02.3"
+   },
+   "sentences": [
+    {
+     "text": "Of the two clarification questions in draft CD-065BB5C0, one is fully answered and one is only partly answered.",
+     "keys": [
+      "DRAFT",
+      "Q2",
+      "Q1"
+     ]
+    },
+    {
+     "text": "Q1, the quantity question for \"Insulated tumbler 500 ml\", is marked as answered.",
+     "keys": [
+      "Q1"
+     ]
+    },
+    {
+     "text": "Q2, the arithmetic question, is marked as partly answered, so it is still open.",
+     "keys": [
+      "Q2"
+     ]
+    },
+    {
+     "text": "One supplier reply is linked to this draft, and it is the only reply saved for this quote series.",
+     "keys": [
+      "DRAFT"
+     ]
+    },
+    {
+     "text": "An answered question only records what the supplier replied; it does not approve any term.",
+     "keys": [
+      "RULE_ANSWERED_NOT_APPROVED"
+     ]
+    },
+    {
+     "text": "Only the approver you assign can approve, and as the buyer you cannot approve.",
+     "keys": [
+      "ROLE",
+      "RULE_ANSWERED_NOT_APPROVED"
+     ]
+    },
+    {
+     "text": "These results relate to quote version 1, which is the latest saved version.",
+     "keys": [
+      "QUOTE"
+     ]
+    }
+   ]
+  },
+  "L5": {
+   "intent": "PAYMENT_AMOUNT",
+   "recordedValidation": {
+    "ok": false,
+    "problems": [
+     "S1:STATE_WITHOUT_FACT:approval"
+    ]
+   },
+   "recordedRules": {
+    "facts": "copilot-facts-2026-11-02.5",
+    "prompt": "copilot-prompt-2026-11-02.2",
+    "validator": "copilot-validator-2026-11-02.3"
+   },
+   "sentences": [
+    {
+     "text": "TradeProof gives no payable amount for this payment, because the approval check is blocked.",
+     "keys": [
+      "AMOUNT_NONE"
+     ]
+    },
+    {
+     "text": "The current rules for this version show 8 blocking items and 0 items to confirm, so the check is BLOCKED.",
+     "keys": [
+      "GATE"
+     ]
+    },
+    {
+     "text": "The blocking items are: pairing not confirmed (listed twice), a request line not quoted, a total that differs from the lines, and an amount above the Sandbox ceiling.",
+     "keys": [
+      "AMOUNT_NONE"
+     ]
+    },
+    {
+     "text": "The remaining blocking items are a staged payment, fee inclusion not stated, and an unknown fee payee.",
+     "keys": [
+      "AMOUNT_NONE"
+     ]
+    },
+    {
+     "text": "The only figure available is the stated total in the reviewed quote, USD 1,700.00, which is not a payable amount.",
+     "keys": [
+      "STATED_TOTAL",
+      "AMOUNT_NONE"
+     ]
+    },
+    {
+     "text": "Landed cost (duties, taxes and delivery to the destination) is not calculated in this version of TradeProof, so it is unknown.",
+     "keys": [
+      "LANDED"
+     ]
+    },
+    {
+     "text": "No approver is assigned and no approval has been recorded, so there is no valid approval for any amount.",
+     "keys": [
+      "APPROVER_ASSIGNMENT",
+      "APPROVAL_NONE"
+     ]
+    },
+    {
+     "text": "No Sandbox payment has been started for this request.",
+     "keys": [
+      "PAYMENT_NONE"
+     ]
+    }
+   ]
+  }
+ }
+}

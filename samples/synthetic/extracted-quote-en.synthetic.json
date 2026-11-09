@@ -1,0 +1,23 @@
+{
+  "_notice": "SYNTHETIC / DEMO DATA — hand-written reference extraction of supplier-quote-en.synthetic.md, for TradeProof tests only",
+  "schemaVersion": 1,
+  "documentId": "supplier-quote-en.synthetic.md",
+  "language": "en",
+  "quoteNumber": { "value": "QT-DEMO-2026-118", "source": "Detailed quotation attached (Chinese version QT-DEMO-2026-118)." },
+  "quoteDate": { "value": null, "source": null },
+  "items": [
+    {
+      "name": { "value": "insulated bottle", "source": "Please find our offer for the insulated bottle:" },
+      "materialGrade": { "value": null, "source": "- Material: stainless steel" },
+      "logo": { "value": { "method": "PRINT_UNSPECIFIED", "colours": 1 }, "source": "- Logo: printed, 1 colour" },
+      "quantity": { "value": 500, "source": "- Quantity: 500 pcs" },
+      "unit": { "value": "pcs", "source": "- Quantity: 500 pcs" },
+      "unitPrice": { "value": { "currency": "USD", "minor": 340 }, "source": "- Price: USD 3.40 / pc, FOB Ningbo" }
+    }
+  ],
+  "total": { "value": null, "source": null },
+  "incoterm": { "value": { "rule": "FOB", "place": "Ningbo" }, "source": "- Price: USD 3.40 / pc, FOB Ningbo" },
+  "leadTime": { "value": { "days": 30, "basis": "UNSPECIFIED", "approximate": true }, "source": "- Lead time: about 30 days" },
+  "paymentTerms": { "value": { "depositPercent": 30, "balanceTiming": "BEFORE_SHIPMENT" }, "source": "- Payment: 30% deposit, balance before shipment" },
+  "extraCharges": []
+}

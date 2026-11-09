@@ -1,0 +1,60 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+
+# Next.js build output
+/.next/
+/out/
+/build
+next-env.d.ts
+*.tsbuildinfo
+
+# environment files and secrets (only .env.example is committed)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials*.json
+.paypal/
+
+# local tool / MCP configs that may hold credentials
+.mcp.local.json
+.claude/settings.local.json
+
+# logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# local databases and Sandbox transaction records (schema lives in src/server/payments/store.ts)
+/data/
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.db
+*.db-journal
+
+# local setup / acceptance reports may contain machine paths
+docs/local-env-report.txt
+docs/local-*-report.*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# deployment
+.vercel
+.render/

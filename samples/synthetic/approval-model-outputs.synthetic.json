@@ -1,0 +1,484 @@
+{
+  "_notice": "SYNTHETIC — hand-written MOCK model outputs for samples/synthetic/approval-quote-{a,b,c}.synthetic.md (29 Oct 2026). Not produced by any AI. {{LINE_TUMBLER}} / {{LINE_BOX}} are replaced by the request line ids when a test or seed script replays them.",
+  "A": {
+    "supplierQuoteNumbers": [
+      {
+        "value": "QT-SYN-APR-A",
+        "quote": "Quotation QT-SYN-APR-A (SYNTHETIC)"
+      }
+    ],
+    "quoteDate": null,
+    "currency": {
+      "value": "USD",
+      "quote": "Total: USD 12.00"
+    },
+    "items": [
+      {
+        "name": {
+          "value": "Insulated tumbler 500 ml",
+          "quote": "Insulated tumbler 500 ml"
+        },
+        "quantity": {
+          "value": "20",
+          "quote": "20 pcs x USD 0.45"
+        },
+        "unit": {
+          "value": "pcs",
+          "quote": "20 pcs x USD 0.45"
+        },
+        "material": {
+          "value": "304 stainless steel",
+          "quote": "304 stainless steel"
+        },
+        "specification": {
+          "value": null,
+          "quote": null
+        },
+        "logo": {
+          "value": null,
+          "quote": null
+        },
+        "unitPrice": {
+          "amount": "0.45",
+          "currency": "USD",
+          "quote": "USD 0.45"
+        },
+        "requestItemCandidates": [
+          "{{LINE_TUMBLER}}"
+        ]
+      },
+      {
+        "name": {
+          "value": "Gift box",
+          "quote": "Gift box"
+        },
+        "quantity": {
+          "value": "20",
+          "quote": "20 pcs x USD 0.15"
+        },
+        "unit": {
+          "value": "pcs",
+          "quote": "20 pcs x USD 0.15"
+        },
+        "material": {
+          "value": null,
+          "quote": null
+        },
+        "specification": {
+          "value": null,
+          "quote": null
+        },
+        "logo": {
+          "value": null,
+          "quote": null
+        },
+        "unitPrice": {
+          "amount": "0.15",
+          "currency": "USD",
+          "quote": "USD 0.15"
+        },
+        "requestItemCandidates": [
+          "{{LINE_BOX}}"
+        ]
+      }
+    ],
+    "total": {
+      "amount": "12.00",
+      "currency": "USD",
+      "quote": "Total: USD 12.00"
+    },
+    "incoterm": {
+      "value": "FOB Ningbo",
+      "quote": "Trade term: FOB Ningbo"
+    },
+    "leadTime": {
+      "value": "20 days after receipt of payment",
+      "quote": "Lead time: 20 days after receipt of payment"
+    },
+    "paymentTerms": {
+      "value": "100% advance payment by T/T before shipment",
+      "quote": "Payment: 100% advance payment by T/T before shipment"
+    },
+    "fees": [
+      {
+        "kind": {
+          "value": "PACKAGING",
+          "quote": "Packing: included in the prices above"
+        },
+        "description": {
+          "value": "Packing",
+          "quote": "Packing: included in the prices above"
+        },
+        "amount": {
+          "amount": null,
+          "currency": null,
+          "quote": null
+        },
+        "amountBasis": {
+          "value": null,
+          "quote": null
+        },
+        "payer": {
+          "value": null,
+          "quote": null
+        },
+        "payee": {
+          "value": null,
+          "quote": null
+        },
+        "includedInQuote": {
+          "value": "INCLUDED",
+          "quote": "Packing: included in the prices above"
+        },
+        "statedAs": {
+          "value": null,
+          "quote": null
+        }
+      }
+    ]
+  },
+  "B": {
+    "supplierQuoteNumbers": [
+      {
+        "value": "QT-SYN-APR-B",
+        "quote": "Quotation QT-SYN-APR-B (SYNTHETIC)"
+      }
+    ],
+    "quoteDate": null,
+    "currency": {
+      "value": "USD",
+      "quote": "Total: USD 12.00"
+    },
+    "items": [
+      {
+        "name": {
+          "value": "Insulated tumbler 500 ml",
+          "quote": "Insulated tumbler 500 ml"
+        },
+        "quantity": {
+          "value": "18",
+          "quote": "18 pcs x USD 0.45"
+        },
+        "unit": {
+          "value": "pcs",
+          "quote": "18 pcs x USD 0.45"
+        },
+        "material": {
+          "value": "304 stainless steel",
+          "quote": "304 stainless steel"
+        },
+        "specification": {
+          "value": null,
+          "quote": null
+        },
+        "logo": {
+          "value": null,
+          "quote": null
+        },
+        "unitPrice": {
+          "amount": "0.45",
+          "currency": "USD",
+          "quote": "USD 0.45"
+        },
+        "requestItemCandidates": [
+          "{{LINE_TUMBLER}}"
+        ]
+      },
+      {
+        "name": {
+          "value": "Gift box",
+          "quote": "Gift box"
+        },
+        "quantity": {
+          "value": "20",
+          "quote": "20 pcs x USD 0.15"
+        },
+        "unit": {
+          "value": "pcs",
+          "quote": "20 pcs x USD 0.15"
+        },
+        "material": {
+          "value": null,
+          "quote": null
+        },
+        "specification": {
+          "value": null,
+          "quote": null
+        },
+        "logo": {
+          "value": null,
+          "quote": null
+        },
+        "unitPrice": {
+          "amount": "0.15",
+          "currency": "USD",
+          "quote": "USD 0.15"
+        },
+        "requestItemCandidates": [
+          "{{LINE_BOX}}"
+        ]
+      }
+    ],
+    "total": {
+      "amount": "12.00",
+      "currency": "USD",
+      "quote": "Total: USD 12.00"
+    },
+    "incoterm": {
+      "value": "FOB Ningbo",
+      "quote": "Trade term: FOB Ningbo"
+    },
+    "leadTime": {
+      "value": "20 days after receipt of payment",
+      "quote": "Lead time: 20 days after receipt of payment"
+    },
+    "paymentTerms": {
+      "value": "100% advance payment by T/T before shipment",
+      "quote": "Payment: 100% advance payment by T/T before shipment"
+    },
+    "fees": [
+      {
+        "kind": {
+          "value": "PACKAGING",
+          "quote": "Packing: included in the prices above"
+        },
+        "description": {
+          "value": "Packing",
+          "quote": "Packing: included in the prices above"
+        },
+        "amount": {
+          "amount": null,
+          "currency": null,
+          "quote": null
+        },
+        "amountBasis": {
+          "value": null,
+          "quote": null
+        },
+        "payer": {
+          "value": null,
+          "quote": null
+        },
+        "payee": {
+          "value": null,
+          "quote": null
+        },
+        "includedInQuote": {
+          "value": "INCLUDED",
+          "quote": "Packing: included in the prices above"
+        },
+        "statedAs": {
+          "value": null,
+          "quote": null
+        }
+      }
+    ]
+  },
+  "C": {
+    "supplierQuoteNumbers": [
+      {
+        "value": "QT-SYN-APR-C",
+        "quote": "Quotation QT-SYN-APR-C (SYNTHETIC)"
+      }
+    ],
+    "quoteDate": null,
+    "currency": {
+      "value": "USD",
+      "quote": "Total: USD 12.00"
+    },
+    "items": [
+      {
+        "name": {
+          "value": "Insulated tumbler 500 ml",
+          "quote": "Insulated tumbler 500 ml"
+        },
+        "quantity": {
+          "value": "20",
+          "quote": "20 pcs x USD 0.45"
+        },
+        "unit": {
+          "value": "pcs",
+          "quote": "20 pcs x USD 0.45"
+        },
+        "material": {
+          "value": "304 stainless steel",
+          "quote": "304 stainless steel"
+        },
+        "specification": {
+          "value": null,
+          "quote": null
+        },
+        "logo": {
+          "value": null,
+          "quote": null
+        },
+        "unitPrice": {
+          "amount": "0.45",
+          "currency": "USD",
+          "quote": "USD 0.45"
+        },
+        "requestItemCandidates": [
+          "{{LINE_TUMBLER}}"
+        ]
+      },
+      {
+        "name": {
+          "value": "Gift box",
+          "quote": "Gift box"
+        },
+        "quantity": {
+          "value": "20",
+          "quote": "20 pcs x USD 0.15"
+        },
+        "unit": {
+          "value": "pcs",
+          "quote": "20 pcs x USD 0.15"
+        },
+        "material": {
+          "value": null,
+          "quote": null
+        },
+        "specification": {
+          "value": null,
+          "quote": null
+        },
+        "logo": {
+          "value": null,
+          "quote": null
+        },
+        "unitPrice": {
+          "amount": "0.15",
+          "currency": "USD",
+          "quote": "USD 0.15"
+        },
+        "requestItemCandidates": [
+          "{{LINE_BOX}}"
+        ]
+      }
+    ],
+    "total": {
+      "amount": "12.00",
+      "currency": "USD",
+      "quote": "Total: USD 12.00"
+    },
+    "incoterm": {
+      "value": "FOB Ningbo",
+      "quote": "Trade term: FOB Ningbo"
+    },
+    "leadTime": {
+      "value": "20 days after receipt of payment",
+      "quote": "Lead time: 20 days after receipt of payment"
+    },
+    "paymentTerms": {
+      "value": "100% advance payment by T/T before shipment",
+      "quote": "Payment: 100% advance payment by T/T before shipment"
+    },
+    "fees": [
+      {
+        "kind": {
+          "value": "PACKAGING",
+          "quote": "Packing: included in the prices above"
+        },
+        "description": {
+          "value": "Packing",
+          "quote": "Packing: included in the prices above"
+        },
+        "amount": {
+          "amount": null,
+          "currency": null,
+          "quote": null
+        },
+        "amountBasis": {
+          "value": null,
+          "quote": null
+        },
+        "payer": {
+          "value": null,
+          "quote": null
+        },
+        "payee": {
+          "value": null,
+          "quote": null
+        },
+        "includedInQuote": {
+          "value": "INCLUDED",
+          "quote": "Packing: included in the prices above"
+        },
+        "statedAs": {
+          "value": null,
+          "quote": null
+        }
+      },
+      {
+        "kind": {
+          "value": "TAX_DUTY",
+          "quote": "Import duties and VAT at destination: not included, payable by the buyer to customs; amount depends on destination"
+        },
+        "description": {
+          "value": "Import duties and VAT at destination",
+          "quote": "Import duties and VAT at destination: not included, payable by the buyer to customs; amount depends on destination"
+        },
+        "amount": {
+          "amount": null,
+          "currency": null,
+          "quote": null
+        },
+        "amountBasis": {
+          "value": null,
+          "quote": null
+        },
+        "payer": {
+          "value": "BUYER",
+          "quote": "Import duties and VAT at destination: not included, payable by the buyer to customs; amount depends on destination"
+        },
+        "payee": {
+          "value": "GOVERNMENT",
+          "quote": "Import duties and VAT at destination: not included, payable by the buyer to customs; amount depends on destination"
+        },
+        "includedInQuote": {
+          "value": "NOT_INCLUDED",
+          "quote": "Import duties and VAT at destination: not included, payable by the buyer to customs; amount depends on destination"
+        },
+        "statedAs": {
+          "value": null,
+          "quote": null
+        }
+      },
+      {
+        "kind": {
+          "value": "OTHER",
+          "quote": "Forwarder handling: approx. USD 25.00, not included, payable by the buyer to the forwarder"
+        },
+        "description": {
+          "value": "Forwarder handling",
+          "quote": "Forwarder handling: approx. USD 25.00, not included, payable by the buyer to the forwarder"
+        },
+        "amount": {
+          "amount": "25.00",
+          "currency": "USD",
+          "quote": "approx. USD 25.00"
+        },
+        "amountBasis": {
+          "value": "LUMP_SUM",
+          "quote": "Forwarder handling: approx. USD 25.00, not included, payable by the buyer to the forwarder"
+        },
+        "payer": {
+          "value": "BUYER",
+          "quote": "Forwarder handling: approx. USD 25.00, not included, payable by the buyer to the forwarder"
+        },
+        "payee": {
+          "value": "CARRIER",
+          "quote": "Forwarder handling: approx. USD 25.00, not included, payable by the buyer to the forwarder"
+        },
+        "includedInQuote": {
+          "value": "NOT_INCLUDED",
+          "quote": "Forwarder handling: approx. USD 25.00, not included, payable by the buyer to the forwarder"
+        },
+        "statedAs": {
+          "value": "ESTIMATE",
+          "quote": "approx. USD 25.00"
+        }
+      }
+    ]
+  }
+}

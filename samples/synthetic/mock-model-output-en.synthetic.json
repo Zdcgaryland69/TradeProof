@@ -1,0 +1,27 @@
+{
+  "_notice": "SYNTHETIC / DEMO — MOCK model output, hand-written for supplier-quote-en.synthetic.md. Used only when AI_PROVIDER=mock (local dev) and in tests. Not produced by any AI.",
+  "textSha256": "02f89c6010abdef50d4c9683eb07713ab8df613ce06d9a23c9e2c2c2c85d3b15",
+  "matchNamePattern": "bottle|保温杯",
+  "output": {
+    "supplierQuoteNumbers": [{ "value": "QT-DEMO-2026-118", "quote": "Detailed quotation attached (Chinese version QT-DEMO-2026-118)." }],
+    "quoteDate": null,
+    "currency": { "value": "USD", "quote": "- Price: USD 3.40 / pc, FOB Ningbo" },
+    "items": [
+      {
+        "name": { "value": "insulated bottle", "quote": "Please find our offer for the insulated bottle:" },
+        "quantity": { "value": "500", "quote": "- Quantity: 500 pcs" },
+        "unit": { "value": "pcs", "quote": "- Quantity: 500 pcs" },
+        "material": { "value": "stainless steel", "quote": "- Material: stainless steel" },
+        "specification": { "value": "500 ml, matte black", "quote": "- Capacity: 500 ml, matte black" },
+        "logo": { "value": "printed, 1 colour", "quote": "- Logo: printed, 1 colour" },
+        "unitPrice": { "amount": "3.40", "currency": "USD", "quote": "- Price: USD 3.40 / pc, FOB Ningbo" },
+        "requestItemCandidates": []
+      }
+    ],
+    "total": null,
+    "incoterm": { "value": "FOB Ningbo", "quote": "- Price: USD 3.40 / pc, FOB Ningbo" },
+    "leadTime": { "value": "about 30 days", "quote": "- Lead time: about 30 days" },
+    "paymentTerms": { "value": "30% deposit, balance before shipment", "quote": "- Payment: 30% deposit, balance before shipment" },
+    "fees": []
+  }
+}

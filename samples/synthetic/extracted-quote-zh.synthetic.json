@@ -1,0 +1,28 @@
+{
+  "_notice": "SYNTHETIC / DEMO DATA — hand-written reference extraction of supplier-quote-zh.synthetic.md, for TradeProof tests only",
+  "schemaVersion": 1,
+  "documentId": "supplier-quote-zh.synthetic.md",
+  "language": "zh",
+  "quoteNumber": { "value": "QT-DEMO-2026-118", "source": "报价编号：QT-DEMO-2026-118" },
+  "quoteDate": { "value": "2026-10-15", "source": "日期：2026-10-15" },
+  "items": [
+    {
+      "name": { "value": "不锈钢保温杯", "source": "| 品名 | 不锈钢保温杯 |" },
+      "materialGrade": { "value": "201", "source": "| 材质 | 201 不锈钢 |" },
+      "logo": { "value": { "method": "SCREEN_PRINT", "colours": 1 }, "source": "| Logo | 丝印 1 色 |" },
+      "quantity": { "value": 480, "source": "| 数量 | 480 个 |" },
+      "unit": { "value": "个", "source": "| 数量 | 480 个 |" },
+      "unitPrice": { "value": { "currency": "CNY", "minor": 2450 }, "source": "| 单价 | 人民币 24.50 元 / 个 |" }
+    }
+  ],
+  "total": { "value": { "currency": "CNY", "minor": 1176000 }, "source": "| 总价 | 人民币 11,760.00 元 |" },
+  "incoterm": { "value": { "rule": "FOB", "place": "宁波" }, "source": "| 贸易条款 | FOB 宁波 |" },
+  "leadTime": { "value": { "days": 35, "basis": "AFTER_DEPOSIT", "approximate": false }, "source": "| 交期 | 收到定金后 35 天 |" },
+  "paymentTerms": { "value": { "depositPercent": 50, "balanceTiming": "BEFORE_SHIPMENT" }, "source": "| 付款方式 | 50% 定金，50% 发货前付清 |" },
+  "extraCharges": [
+    {
+      "value": { "description": "激光雕刻 Logo 每个另加人民币 1.20 元", "logoMethod": "LASER_ENGRAVING", "perUnit": { "currency": "CNY", "minor": 120 } },
+      "source": "激光雕刻 Logo 每个另加人民币 1.20 元。"
+    }
+  ]
+}

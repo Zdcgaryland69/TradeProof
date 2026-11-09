@@ -1,0 +1,2934 @@
+{
+ "_notice": "SYNTHETIC test data. Read-only export (26 Oct 2026) of the five stored real-model acceptance runs (Anthropic claude-sonnet-5-5, 25 Oct; docs/live-model-acceptance.md) with their quote versions and request snapshots. Used by tests/comparison.test.ts; no model is called.",
+ "cases": {
+  "LA-1": {
+   "title": "[SYNTHETIC / LIVE TEST] LA-1 normal complete quote",
+   "version": {
+    "id": "qv_9ce9c860-5266-4bfb-86c1-0fcccad3bd79",
+    "seriesId": "qs_be1e3465-64c3-4818-9680-9300f6490e83",
+    "requestId": "pr_99154d49-e2b1-4069-a152-74ce83d553ad",
+    "versionNumber": 1,
+    "latestVersionNumber": 1,
+    "contentKind": "FULL_QUOTE",
+    "supplementsVersionId": null,
+    "supplementsVersionNumber": null,
+    "rawTextSha256": "401694eb28dbf8f7e18cc52b95fa64d39c0f1a24815d8e15c3dbb6bd52cb822a",
+    "requestRevision": 1,
+    "snapshot": {
+     "snapshotVersion": 2,
+     "capturedAt": "2026-10-25T11:33:17.299Z",
+     "record": {
+      "id": "pr_99154d49-e2b1-4069-a152-74ce83d553ad",
+      "title": "[SYNTHETIC / LIVE TEST] LA-1 normal complete quote",
+      "buyerType": "BUSINESS",
+      "buyerCompany": "Synthetic buyer (live acceptance)",
+      "buyerPersonName": null,
+      "supplierName": null,
+      "shipFrom": null,
+      "shipTo": null,
+      "budgetCurrency": null,
+      "budgetMaxMinor": null,
+      "budgetMax": null,
+      "requiredShipDate": null,
+      "expectedDeliveryDate": null,
+      "paymentTerms": null,
+      "additionalRequirements": null,
+      "status": "DRAFT",
+      "source": "USER_INPUT",
+      "revision": 1,
+      "createdAt": "2026-10-25T11:33:16.540Z",
+      "updatedAt": "2026-10-25T11:33:16.540Z",
+      "items": [
+       {
+        "id": "pri_99814a91-7157-48d3-8e3b-04659c7f742f",
+        "position": 1,
+        "name": "Stainless steel water bottle 500 ml",
+        "quantity": 200,
+        "unit": "pcs",
+        "material": "304 stainless steel",
+        "specification": null,
+        "customization": null,
+        "notes": null
+       }
+      ]
+     }
+    },
+    "rawText": "> SYNTHETIC / DEMO — fictional quote for TradeProof tests. Not a real supplier or price.\n\nQuotation No.: LA-001\nDate: 2026-10-20\nSupplier: Example Steelware Co. (fictional)\n\n1) Stainless steel water bottle 500 ml, 304 stainless steel, logo laser engraved — 200 pcs @ USD 4.10 = USD 820.00\nTotal: USD 820.00\n\nTrade term: FOB Ningbo\nLead time: 30 days after deposit\nPayment: 30% deposit, 70% before shipment\nFreight: not included, arranged and paid by the buyer\n"
+   },
+   "base": null,
+   "run": {
+    "id": "qx_c55ff4b7-9108-4297-a586-f36ea57fd44b",
+    "versionId": "qv_9ce9c860-5266-4bfb-86c1-0fcccad3bd79",
+    "seriesId": "qs_be1e3465-64c3-4818-9680-9300f6490e83",
+    "requestId": "pr_99154d49-e2b1-4069-a152-74ce83d553ad",
+    "inputSha256": "401694eb28dbf8f7e18cc52b95fa64d39c0f1a24815d8e15c3dbb6bd52cb822a",
+    "requestRevision": 1,
+    "contextVersionId": null,
+    "mode": "LIVE",
+    "provider": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "quote-extract-2026-10-24.1",
+    "schemaVersion": "extraction-result-2",
+    "status": "SUCCEEDED",
+    "interrupted": false,
+    "errorCode": null,
+    "errorMessage": null,
+    "attempts": 1,
+    "inputTokens": 1889,
+    "outputTokens": 1117,
+    "startedAt": "2026-10-25T11:47:44.358Z",
+    "finishedAt": "2026-10-25T11:47:50.744Z",
+    "result": {
+     "schemaVersion": "extraction-result-2",
+     "checkRules": "value-check-2026-10-25.1",
+     "contentKind": "FULL_QUOTE",
+     "supplierQuoteNumbers": [
+      {
+       "value": "LA-001",
+       "modelValue": "LA-001",
+       "modelExcerpt": "Quotation No.: LA-001",
+       "kind": "VERBATIM",
+       "check": "SUPPORTED",
+       "evidence": {
+        "excerpt": "Quotation No.: LA-001",
+        "start": 90,
+        "end": 111,
+        "line": 3,
+        "occurrences": 1
+       },
+       "note": null,
+       "valueCheck": {
+        "rules": "value-check-2026-10-25.1",
+        "field": "TEXT",
+        "outcome": "MATCH",
+        "matches": [],
+        "note": null
+       }
+      }
+     ],
+     "quoteDate": {
+      "value": "2026-10-20",
+      "modelValue": "2026-10-20",
+      "modelExcerpt": "Date: 2026-10-20",
+      "kind": "VERBATIM",
+      "check": "SUPPORTED",
+      "evidence": {
+       "excerpt": "Date: 2026-10-20",
+       "start": 112,
+       "end": 128,
+       "line": 4,
+       "occurrences": 1
+      },
+      "note": null,
+      "valueCheck": {
+       "rules": "value-check-2026-10-25.1",
+       "field": "TEXT",
+       "outcome": "MATCH",
+       "matches": [],
+       "note": null
+      }
+     },
+     "currency": {
+      "value": "USD",
+      "modelValue": "USD",
+      "modelExcerpt": "USD 4.10",
+      "kind": "VERBATIM",
+      "check": "SUPPORTED",
+      "evidence": {
+       "excerpt": "USD 4.10",
+       "start": 267,
+       "end": 275,
+       "line": 7,
+       "occurrences": 1
+      },
+      "note": null
+     },
+     "items": [
+      {
+       "name": {
+        "value": "Stainless steel water bottle 500 ml",
+        "modelValue": "Stainless steel water bottle 500 ml",
+        "modelExcerpt": "Stainless steel water bottle 500 ml",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Stainless steel water bottle 500 ml",
+         "start": 177,
+         "end": 212,
+         "line": 7,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "TEXT",
+         "outcome": "MATCH",
+         "matches": [],
+         "note": null
+        }
+       },
+       "quantity": {
+        "value": 200,
+        "modelValue": "200",
+        "modelExcerpt": "200 pcs",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "200 pcs",
+         "start": 257,
+         "end": 264,
+         "line": 7,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "QUANTITY",
+         "outcome": "MATCH",
+         "matches": [
+          {
+           "start": 0,
+           "end": 3,
+           "raw": "200"
+          }
+         ],
+         "note": null
+        }
+       },
+       "unit": {
+        "value": "pcs",
+        "modelValue": "pcs",
+        "modelExcerpt": "200 pcs",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "200 pcs",
+         "start": 257,
+         "end": 264,
+         "line": 7,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "TEXT",
+         "outcome": "MATCH",
+         "matches": [],
+         "note": null
+        }
+       },
+       "material": {
+        "value": "304 stainless steel",
+        "modelValue": "304 stainless steel",
+        "modelExcerpt": "304 stainless steel",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "304 stainless steel",
+         "start": 214,
+         "end": 233,
+         "line": 7,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "TEXT",
+         "outcome": "MATCH",
+         "matches": [],
+         "note": null
+        }
+       },
+       "specification": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "VERBATIM",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "logo": {
+        "value": "logo laser engraved",
+        "modelValue": "logo laser engraved",
+        "modelExcerpt": "logo laser engraved",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "logo laser engraved",
+         "start": 235,
+         "end": 254,
+         "line": 7,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "TEXT",
+         "outcome": "MATCH",
+         "matches": [],
+         "note": null
+        }
+       },
+       "unitPrice": {
+        "value": {
+         "amountText": "4.10",
+         "currency": "USD",
+         "minor": 410
+        },
+        "modelValue": "USD 4.10",
+        "modelExcerpt": "@ USD 4.10",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "@ USD 4.10",
+         "start": 265,
+         "end": 275,
+         "line": 7,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "AMOUNT",
+         "outcome": "MATCH",
+         "matches": [
+          {
+           "start": 6,
+           "end": 10,
+           "raw": "4.10"
+          }
+         ],
+         "note": null
+        }
+       },
+       "match": {
+        "status": "PROPOSED",
+        "candidateIds": [
+         "pri_99814a91-7157-48d3-8e3b-04659c7f742f"
+        ],
+        "rejectedIds": []
+       }
+      }
+     ],
+     "total": {
+      "value": {
+       "amountText": "820.00",
+       "currency": "USD",
+       "minor": 82000
+      },
+      "modelValue": "USD 820.00",
+      "modelExcerpt": "Total: USD 820.00",
+      "kind": "VERBATIM",
+      "check": "SUPPORTED",
+      "evidence": {
+       "excerpt": "Total: USD 820.00",
+       "start": 289,
+       "end": 306,
+       "line": 8,
+       "occurrences": 1
+      },
+      "note": null,
+      "valueCheck": {
+       "rules": "value-check-2026-10-25.1",
+       "field": "AMOUNT",
+       "outcome": "MATCH",
+       "matches": [
+        {
+         "start": 11,
+         "end": 17,
+         "raw": "820.00"
+        }
+       ],
+       "note": null
+      }
+     },
+     "incoterm": {
+      "value": "FOB Ningbo",
+      "modelValue": "FOB Ningbo",
+      "modelExcerpt": "Trade term: FOB Ningbo",
+      "kind": "VERBATIM",
+      "check": "SUPPORTED",
+      "evidence": {
+       "excerpt": "Trade term: FOB Ningbo",
+       "start": 308,
+       "end": 330,
+       "line": 10,
+       "occurrences": 1
+      },
+      "note": null,
+      "valueCheck": {
+       "rules": "value-check-2026-10-25.1",
+       "field": "TEXT",
+       "outcome": "MATCH",
+       "matches": [],
+       "note": null
+      }
+     },
+     "leadTime": {
+      "value": "30 days after deposit",
+      "modelValue": "30 days after deposit",
+      "modelExcerpt": "Lead time: 30 days after deposit",
+      "kind": "VERBATIM",
+      "check": "SUPPORTED",
+      "evidence": {
+       "excerpt": "Lead time: 30 days after deposit",
+       "start": 331,
+       "end": 363,
+       "line": 11,
+       "occurrences": 1
+      },
+      "note": null,
+      "valueCheck": {
+       "rules": "value-check-2026-10-25.1",
+       "field": "TEXT",
+       "outcome": "MATCH",
+       "matches": [],
+       "note": null
+      }
+     },
+     "paymentTerms": {
+      "value": "30% deposit, 70% before shipment",
+      "modelValue": "30% deposit, 70% before shipment",
+      "modelExcerpt": "Payment: 30% deposit, 70% before shipment",
+      "kind": "VERBATIM",
+      "check": "SUPPORTED",
+      "evidence": {
+       "excerpt": "Payment: 30% deposit, 70% before shipment",
+       "start": 364,
+       "end": 405,
+       "line": 12,
+       "occurrences": 1
+      },
+      "note": null,
+      "valueCheck": {
+       "rules": "value-check-2026-10-25.1",
+       "field": "TEXT",
+       "outcome": "MATCH",
+       "matches": [],
+       "note": null
+      }
+     },
+     "fees": [
+      {
+       "kind": {
+        "value": "GOODS",
+        "modelValue": "GOODS",
+        "modelExcerpt": "200 pcs @ USD 4.10 = USD 820.00",
+        "kind": "INTERPRETED",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "200 pcs @ USD 4.10 = USD 820.00",
+         "start": 257,
+         "end": 288,
+         "line": 7,
+         "occurrences": 1
+        },
+        "note": "The model's reading of the excerpt — check it."
+       },
+       "description": {
+        "value": "Stainless steel water bottle 500 ml",
+        "modelValue": "Stainless steel water bottle 500 ml",
+        "modelExcerpt": "Stainless steel water bottle 500 ml",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Stainless steel water bottle 500 ml",
+         "start": 177,
+         "end": 212,
+         "line": 7,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "TEXT",
+         "outcome": "MATCH",
+         "matches": [],
+         "note": null
+        }
+       },
+       "amount": {
+        "value": {
+         "amountText": "820.00",
+         "currency": "USD",
+         "minor": 82000
+        },
+        "modelValue": "USD 820.00",
+        "modelExcerpt": "USD 820.00",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "USD 820.00",
+         "start": 278,
+         "end": 288,
+         "line": 7,
+         "occurrences": 2
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "AMOUNT",
+         "outcome": "MATCH",
+         "matches": [
+          {
+           "start": 4,
+           "end": 10,
+           "raw": "820.00"
+          }
+         ],
+         "note": null
+        }
+       },
+       "amountBasis": {
+        "value": "LUMP_SUM",
+        "modelValue": "LUMP_SUM",
+        "modelExcerpt": "= USD 820.00",
+        "kind": "INTERPRETED",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "= USD 820.00",
+         "start": 276,
+         "end": 288,
+         "line": 7,
+         "occurrences": 1
+        },
+        "note": "The model's reading of the excerpt — check it."
+       },
+       "payer": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "INTERPRETED",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "payee": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "INTERPRETED",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "includedInQuote": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "INTERPRETED",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "statedAs": {
+        "value": "FIRM",
+        "modelValue": "FIRM",
+        "modelExcerpt": "Total: USD 820.00",
+        "kind": "INTERPRETED",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Total: USD 820.00",
+         "start": 289,
+         "end": 306,
+         "line": 8,
+         "occurrences": 1
+        },
+        "note": "The model's reading of the excerpt — check it."
+       }
+      },
+      {
+       "kind": {
+        "value": "FREIGHT",
+        "modelValue": "FREIGHT",
+        "modelExcerpt": "Freight: not included, arranged and paid by the buyer",
+        "kind": "INTERPRETED",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Freight: not included, arranged and paid by the buyer",
+         "start": 406,
+         "end": 459,
+         "line": 13,
+         "occurrences": 1
+        },
+        "note": "The model's reading of the excerpt — check it."
+       },
+       "description": {
+        "value": "Freight",
+        "modelValue": "Freight",
+        "modelExcerpt": "Freight: not included",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Freight: not included",
+         "start": 406,
+         "end": 427,
+         "line": 13,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "TEXT",
+         "outcome": "MATCH",
+         "matches": [],
+         "note": null
+        }
+       },
+       "amount": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "VERBATIM",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "amountBasis": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "INTERPRETED",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "payer": {
+        "value": "BUYER",
+        "modelValue": "BUYER",
+        "modelExcerpt": "arranged and paid by the buyer",
+        "kind": "INTERPRETED",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "arranged and paid by the buyer",
+         "start": 429,
+         "end": 459,
+         "line": 13,
+         "occurrences": 1
+        },
+        "note": "The model's reading of the excerpt — check it."
+       },
+       "payee": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "INTERPRETED",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "includedInQuote": {
+        "value": "NOT_INCLUDED",
+        "modelValue": "NOT_INCLUDED",
+        "modelExcerpt": "not included",
+        "kind": "INTERPRETED",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "not included",
+         "start": 415,
+         "end": 427,
+         "line": 13,
+         "occurrences": 1
+        },
+        "note": "The model's reading of the excerpt — check it."
+       },
+       "statedAs": {
+        "value": "TO_BE_CONFIRMED",
+        "modelValue": "TO_BE_CONFIRMED",
+        "modelExcerpt": "Freight: not included, arranged and paid by the buyer",
+        "kind": "INTERPRETED",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Freight: not included, arranged and paid by the buyer",
+         "start": 406,
+         "end": 459,
+         "line": 13,
+         "occurrences": 1
+        },
+        "note": "The model's reading of the excerpt — check it."
+       }
+      }
+     ],
+     "arithmetic": [
+      {
+       "code": "TOTAL_MATCHES_ITEMS",
+       "message": "Quantity × unit price = USD 820.00, equal to the stated total."
+      }
+     ],
+     "costSummary": {
+      "lines": [
+       {
+        "currency": "USD",
+        "quotedTotalMinor": 82000,
+        "extraKnownMinor": 0,
+        "extraKnownCount": 0
+       }
+      ],
+      "unknownFeeCount": 2
+     },
+     "counts": {
+      "SUPPORTED": 23,
+      "NOT_STATED": 7,
+      "NO_EXCERPT": 0,
+      "NOT_IN_TEXT": 0,
+      "ONLY_IN_CONTEXT": 0,
+      "VALUE_NOT_IN_EXCERPT": 0,
+      "SUSPICIOUS_EXCERPT": 0,
+      "INVALID_VALUE": 0,
+      "AMBIGUOUS_VALUE": 0
+     }
+    },
+    "rawOutput": "{\n  \"supplierQuoteNumbers\": [\n    {\"value\": \"LA-001\", \"quote\": \"Quotation No.: LA-001\"}\n  ],\n  \"quoteDate\": {\"value\": \"2026-10-20\", \"quote\": \"Date: 2026-10-20\"},\n  \"currency\": {\"value\": \"USD\", \"quote\": \"USD 4.10\"},\n  \"items\": [\n    {\n      \"name\": {\"value\": \"Stainless steel water bottle 500 ml\", \"quote\": \"Stainless steel water bottle 500 ml\"},\n      \"quantity\": {\"value\": \"200\", \"quote\": \"200 pcs\"},\n      \"unit\": {\"value\": \"pcs\", \"quote\": \"200 pcs\"},\n      \"material\": {\"value\": \"304 stainless steel\", \"quote\": \"304 stainless steel\"},\n      \"specification\": {\"value\": null, \"quote\": null},\n      \"logo\": {\"value\": \"logo laser engraved\", \"quote\": \"logo laser engraved\"},\n      \"unitPrice\": {\"amount\": \"4.10\", \"currency\": \"USD\", \"quote\": \"@ USD 4.10\"},\n      \"requestItemCandidates\": [\"pri_99814a91-7157-48d3-8e3b-04659c7f742f\"]\n    }\n  ],\n  \"total\": {\"amount\": \"820.00\", \"currency\": \"USD\", \"quote\": \"Total: USD 820.00\"},\n  \"incoterm\": {\"value\": \"FOB Ningbo\", \"quote\": \"Trade term: FOB Ningbo\"},\n  \"leadTime\": {\"value\": \"30 days after deposit\", \"quote\": \"Lead time: 30 days after deposit\"},\n  \"paymentTerms\": {\"value\": \"30% deposit, 70% before shipment\", \"quote\": \"Payment: 30% deposit, 70% before shipment\"},\n  \"fees\": [\n    {\n      \"kind\": {\"value\": \"GOODS\", \"quote\": \"200 pcs @ USD 4.10 = USD 820.00\"},\n      \"description\": {\"value\": \"Stainless steel water bottle 500 ml\", \"quote\": \"Stainless steel water bottle 500 ml\"},\n      \"amount\": {\"amount\": \"820.00\", \"currency\": \"USD\", \"quote\": \"USD 820.00\"},\n      \"amountBasis\": {\"value\": \"LUMP_SUM\", \"quote\": \"= USD 820.00\"},\n      \"payer\": {\"value\": null, \"quote\": null},\n      \"payee\": {\"value\": null, \"quote\": null},\n      \"includedInQuote\": {\"value\": null, \"quote\": null},\n      \"statedAs\": {\"value\": \"FIRM\", \"quote\": \"Total: USD 820.00\"}\n    },\n    {\n      \"kind\": {\"value\": \"FREIGHT\", \"quote\": \"Freight: not included, arranged and paid by the buyer\"},\n      \"description\": {\"value\": \"Freight\", \"quote\": \"Freight: not included\"},\n      \"amount\": {\"amount\": null, \"currency\": null, \"quote\": null},\n      \"amountBasis\": {\"value\": null, \"quote\": null},\n      \"payer\": {\"value\": \"BUYER\", \"quote\": \"arranged and paid by the buyer\"},\n      \"payee\": {\"value\": null, \"quote\": null},\n      \"includedInQuote\": {\"value\": \"NOT_INCLUDED\", \"quote\": \"not included\"},\n      \"statedAs\": {\"value\": \"TO_BE_CONFIRMED\", \"quote\": \"Freight: not included, arranged and paid by the buyer\"}\n    }\n  ]\n}"
+   }
+  },
+  "LA-2": {
+   "title": "[SYNTHETIC / LIVE TEST] LA-2 number confusion",
+   "version": {
+    "id": "qv_1d9a6739-6a0a-4918-a38a-dbce725b1423",
+    "seriesId": "qs_1589fb9b-31f0-4980-a526-832182206040",
+    "requestId": "pr_62d0ae5a-35d8-4f8c-9c76-7852bcaae0c7",
+    "versionNumber": 1,
+    "latestVersionNumber": 1,
+    "contentKind": "FULL_QUOTE",
+    "supplementsVersionId": null,
+    "supplementsVersionNumber": null,
+    "rawTextSha256": "820d401305259ee7e5aeb739c7faa2bd818b607b12cd80af7e771a47f8f0d865",
+    "requestRevision": 1,
+    "snapshot": {
+     "snapshotVersion": 2,
+     "capturedAt": "2026-10-25T11:48:06.679Z",
+     "record": {
+      "id": "pr_62d0ae5a-35d8-4f8c-9c76-7852bcaae0c7",
+      "title": "[SYNTHETIC / LIVE TEST] LA-2 number confusion",
+      "buyerType": "BUSINESS",
+      "buyerCompany": "Synthetic buyer (live acceptance)",
+      "buyerPersonName": null,
+      "supplierName": null,
+      "shipFrom": null,
+      "shipTo": null,
+      "budgetCurrency": null,
+      "budgetMaxMinor": null,
+      "budgetMax": null,
+      "requiredShipDate": null,
+      "expectedDeliveryDate": null,
+      "paymentTerms": null,
+      "additionalRequirements": null,
+      "status": "DRAFT",
+      "source": "USER_INPUT",
+      "revision": 1,
+      "createdAt": "2026-10-25T11:48:05.976Z",
+      "updatedAt": "2026-10-25T11:48:05.976Z",
+      "items": [
+       {
+        "id": "pri_81cfd5e1-c780-4856-b042-5b516547d314",
+        "position": 1,
+        "name": "Insulated bottle 500 ml",
+        "quantity": 500,
+        "unit": "pcs",
+        "material": null,
+        "specification": null,
+        "customization": null,
+        "notes": null
+       }
+      ]
+     }
+    },
+    "rawText": "> SYNTHETIC / DEMO — fictional quote for TradeProof tests. Not a real supplier or price.\n\nQuotation No.: LA-002\nDate: 2026-10-21\n\nModel BT-1500 insulated bottle, capacity 500 ml\nQuantity: 500 pcs (MOQ for custom colours would be 1500 pcs; not ordered)\nUnit price: USD 3.20 per pc\nGift-box version (not ordered): USD 13.20 per pc\nTotal: USD 1,600.00\n\nTrade term: FOB Xiamen\n"
+   },
+   "base": null,
+   "run": {
+    "id": "qx_4f23e399-498e-4eda-a18a-d5d70a4a3e89",
+    "versionId": "qv_1d9a6739-6a0a-4918-a38a-dbce725b1423",
+    "seriesId": "qs_1589fb9b-31f0-4980-a526-832182206040",
+    "requestId": "pr_62d0ae5a-35d8-4f8c-9c76-7852bcaae0c7",
+    "inputSha256": "820d401305259ee7e5aeb739c7faa2bd818b607b12cd80af7e771a47f8f0d865",
+    "requestRevision": 1,
+    "contextVersionId": null,
+    "mode": "LIVE",
+    "provider": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "quote-extract-2026-10-24.1",
+    "schemaVersion": "extraction-result-2",
+    "status": "INCOMPLETE",
+    "interrupted": false,
+    "errorCode": null,
+    "errorMessage": null,
+    "attempts": 1,
+    "inputTokens": 1853,
+    "outputTokens": 846,
+    "startedAt": "2026-10-25T11:48:06.774Z",
+    "finishedAt": "2026-10-25T11:48:11.569Z",
+    "result": {
+     "schemaVersion": "extraction-result-2",
+     "checkRules": "value-check-2026-10-25.1",
+     "contentKind": "FULL_QUOTE",
+     "supplierQuoteNumbers": [
+      {
+       "value": "LA-002",
+       "modelValue": "LA-002",
+       "modelExcerpt": "Quotation No.: LA-002",
+       "kind": "VERBATIM",
+       "check": "SUPPORTED",
+       "evidence": {
+        "excerpt": "Quotation No.: LA-002",
+        "start": 90,
+        "end": 111,
+        "line": 3,
+        "occurrences": 1
+       },
+       "note": null,
+       "valueCheck": {
+        "rules": "value-check-2026-10-25.1",
+        "field": "TEXT",
+        "outcome": "MATCH",
+        "matches": [],
+        "note": null
+       }
+      }
+     ],
+     "quoteDate": {
+      "value": "2026-10-21",
+      "modelValue": "2026-10-21",
+      "modelExcerpt": "Date: 2026-10-21",
+      "kind": "VERBATIM",
+      "check": "SUPPORTED",
+      "evidence": {
+       "excerpt": "Date: 2026-10-21",
+       "start": 112,
+       "end": 128,
+       "line": 4,
+       "occurrences": 1
+      },
+      "note": null,
+      "valueCheck": {
+       "rules": "value-check-2026-10-25.1",
+       "field": "TEXT",
+       "outcome": "MATCH",
+       "matches": [],
+       "note": null
+      }
+     },
+     "currency": {
+      "value": "USD",
+      "modelValue": "USD",
+      "modelExcerpt": "Unit price: USD 3.20 per pc",
+      "kind": "VERBATIM",
+      "check": "SUPPORTED",
+      "evidence": {
+       "excerpt": "Unit price: USD 3.20 per pc",
+       "start": 252,
+       "end": 279,
+       "line": 8,
+       "occurrences": 1
+      },
+      "note": null
+     },
+     "items": [
+      {
+       "name": {
+        "value": "Model BT-1500 insulated bottle",
+        "modelValue": "Model BT-1500 insulated bottle",
+        "modelExcerpt": "Model BT-1500 insulated bottle, capacity 500 ml",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Model BT-1500 insulated bottle, capacity 500 ml",
+         "start": 130,
+         "end": 177,
+         "line": 6,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "TEXT",
+         "outcome": "MATCH",
+         "matches": [],
+         "note": null
+        }
+       },
+       "quantity": {
+        "value": 500,
+        "modelValue": "500",
+        "modelExcerpt": "Quantity: 500 pcs",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Quantity: 500 pcs",
+         "start": 178,
+         "end": 195,
+         "line": 7,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "QUANTITY",
+         "outcome": "MATCH",
+         "matches": [
+          {
+           "start": 10,
+           "end": 13,
+           "raw": "500"
+          }
+         ],
+         "note": null
+        }
+       },
+       "unit": {
+        "value": "pcs",
+        "modelValue": "pcs",
+        "modelExcerpt": "Quantity: 500 pcs",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Quantity: 500 pcs",
+         "start": 178,
+         "end": 195,
+         "line": 7,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "TEXT",
+         "outcome": "MATCH",
+         "matches": [],
+         "note": null
+        }
+       },
+       "material": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "VERBATIM",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "specification": {
+        "value": "capacity 500 ml",
+        "modelValue": "capacity 500 ml",
+        "modelExcerpt": "capacity 500 ml",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "capacity 500 ml",
+         "start": 162,
+         "end": 177,
+         "line": 6,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "TEXT",
+         "outcome": "MATCH",
+         "matches": [],
+         "note": null
+        }
+       },
+       "logo": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "VERBATIM",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "unitPrice": {
+        "value": {
+         "amountText": "3.20",
+         "currency": "USD",
+         "minor": 320
+        },
+        "modelValue": "USD 3.20",
+        "modelExcerpt": "Unit price: USD 3.20 per pc",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Unit price: USD 3.20 per pc",
+         "start": 252,
+         "end": 279,
+         "line": 8,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "AMOUNT",
+         "outcome": "MATCH",
+         "matches": [
+          {
+           "start": 16,
+           "end": 20,
+           "raw": "3.20"
+          }
+         ],
+         "note": null
+        }
+       },
+       "match": {
+        "status": "PROPOSED",
+        "candidateIds": [
+         "pri_81cfd5e1-c780-4856-b042-5b516547d314"
+        ],
+        "rejectedIds": []
+       }
+      }
+     ],
+     "total": {
+      "value": {
+       "amountText": "1,600.00",
+       "currency": "USD",
+       "minor": 160000
+      },
+      "modelValue": "USD 1,600.00",
+      "modelExcerpt": "Total: USD 1,600.00",
+      "kind": "VERBATIM",
+      "check": "SUPPORTED",
+      "evidence": {
+       "excerpt": "Total: USD 1,600.00",
+       "start": 329,
+       "end": 348,
+       "line": 10,
+       "occurrences": 1
+      },
+      "note": null,
+      "valueCheck": {
+       "rules": "value-check-2026-10-25.1",
+       "field": "AMOUNT",
+       "outcome": "MATCH",
+       "matches": [
+        {
+         "start": 11,
+         "end": 19,
+         "raw": "1,600.00"
+        }
+       ],
+       "note": null
+      }
+     },
+     "incoterm": {
+      "value": "FOB Xiamen",
+      "modelValue": "FOB Xiamen",
+      "modelExcerpt": "Trade term: FOB Xiamen",
+      "kind": "VERBATIM",
+      "check": "SUPPORTED",
+      "evidence": {
+       "excerpt": "Trade term: FOB Xiamen",
+       "start": 350,
+       "end": 372,
+       "line": 12,
+       "occurrences": 1
+      },
+      "note": null,
+      "valueCheck": {
+       "rules": "value-check-2026-10-25.1",
+       "field": "TEXT",
+       "outcome": "MATCH",
+       "matches": [],
+       "note": null
+      }
+     },
+     "leadTime": {
+      "value": null,
+      "modelValue": null,
+      "modelExcerpt": null,
+      "kind": "VERBATIM",
+      "check": "NOT_STATED",
+      "evidence": null,
+      "note": null
+     },
+     "paymentTerms": {
+      "value": null,
+      "modelValue": null,
+      "modelExcerpt": null,
+      "kind": "VERBATIM",
+      "check": "NOT_STATED",
+      "evidence": null,
+      "note": null
+     },
+     "fees": [
+      {
+       "kind": {
+        "value": "GOODS",
+        "modelValue": "GOODS",
+        "modelExcerpt": "Unit price: USD 3.20 per pc",
+        "kind": "INTERPRETED",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Unit price: USD 3.20 per pc",
+         "start": 252,
+         "end": 279,
+         "line": 8,
+         "occurrences": 1
+        },
+        "note": "The model's reading of the excerpt — check it."
+       },
+       "description": {
+        "value": null,
+        "modelValue": "Model BT-1500 insulated bottle unit price",
+        "modelExcerpt": "Unit price: USD 3.20 per pc",
+        "kind": "VERBATIM",
+        "check": "VALUE_NOT_IN_EXCERPT",
+        "evidence": {
+         "excerpt": "Unit price: USD 3.20 per pc",
+         "start": 252,
+         "end": 279,
+         "line": 8,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "TEXT",
+         "outcome": "NO_MATCH",
+         "matches": [],
+         "note": null
+        }
+       },
+       "amount": {
+        "value": {
+         "amountText": "3.20",
+         "currency": "USD",
+         "minor": 320
+        },
+        "modelValue": "USD 3.20",
+        "modelExcerpt": "Unit price: USD 3.20 per pc",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Unit price: USD 3.20 per pc",
+         "start": 252,
+         "end": 279,
+         "line": 8,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "AMOUNT",
+         "outcome": "MATCH",
+         "matches": [
+          {
+           "start": 16,
+           "end": 20,
+           "raw": "3.20"
+          }
+         ],
+         "note": null
+        }
+       },
+       "amountBasis": {
+        "value": "PER_UNIT",
+        "modelValue": "PER_UNIT",
+        "modelExcerpt": "Unit price: USD 3.20 per pc",
+        "kind": "INTERPRETED",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Unit price: USD 3.20 per pc",
+         "start": 252,
+         "end": 279,
+         "line": 8,
+         "occurrences": 1
+        },
+        "note": "The model's reading of the excerpt — check it."
+       },
+       "payer": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "INTERPRETED",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "payee": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "INTERPRETED",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "includedInQuote": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "INTERPRETED",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "statedAs": {
+        "value": "FIRM",
+        "modelValue": "FIRM",
+        "modelExcerpt": "Unit price: USD 3.20 per pc",
+        "kind": "INTERPRETED",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Unit price: USD 3.20 per pc",
+         "start": 252,
+         "end": 279,
+         "line": 8,
+         "occurrences": 1
+        },
+        "note": "The model's reading of the excerpt — check it."
+       }
+      }
+     ],
+     "arithmetic": [
+      {
+       "code": "TOTAL_MATCHES_ITEMS",
+       "message": "Quantity × unit price = USD 1600.00, equal to the stated total."
+      }
+     ],
+     "costSummary": {
+      "lines": [
+       {
+        "currency": "USD",
+        "quotedTotalMinor": 160000,
+        "extraKnownMinor": 0,
+        "extraKnownCount": 0
+       }
+      ],
+      "unknownFeeCount": 1
+     },
+     "counts": {
+      "SUPPORTED": 14,
+      "NOT_STATED": 7,
+      "NO_EXCERPT": 0,
+      "NOT_IN_TEXT": 0,
+      "ONLY_IN_CONTEXT": 0,
+      "VALUE_NOT_IN_EXCERPT": 1,
+      "SUSPICIOUS_EXCERPT": 0,
+      "INVALID_VALUE": 0,
+      "AMBIGUOUS_VALUE": 0
+     }
+    },
+    "rawOutput": "{\n  \"supplierQuoteNumbers\": [\n    {\"value\": \"LA-002\", \"quote\": \"Quotation No.: LA-002\"}\n  ],\n  \"quoteDate\": {\"value\": \"2026-10-21\", \"quote\": \"Date: 2026-10-21\"},\n  \"currency\": {\"value\": \"USD\", \"quote\": \"Unit price: USD 3.20 per pc\"},\n  \"items\": [\n    {\n      \"name\": {\"value\": \"Model BT-1500 insulated bottle\", \"quote\": \"Model BT-1500 insulated bottle, capacity 500 ml\"},\n      \"quantity\": {\"value\": \"500\", \"quote\": \"Quantity: 500 pcs\"},\n      \"unit\": {\"value\": \"pcs\", \"quote\": \"Quantity: 500 pcs\"},\n      \"material\": {\"value\": null, \"quote\": null},\n      \"specification\": {\"value\": \"capacity 500 ml\", \"quote\": \"capacity 500 ml\"},\n      \"logo\": {\"value\": null, \"quote\": null},\n      \"unitPrice\": {\"amount\": \"3.20\", \"currency\": \"USD\", \"quote\": \"Unit price: USD 3.20 per pc\"},\n      \"requestItemCandidates\": [\"pri_81cfd5e1-c780-4856-b042-5b516547d314\"]\n    }\n  ],\n  \"total\": {\"amount\": \"1,600.00\", \"currency\": \"USD\", \"quote\": \"Total: USD 1,600.00\"},\n  \"incoterm\": {\"value\": \"FOB Xiamen\", \"quote\": \"Trade term: FOB Xiamen\"},\n  \"leadTime\": {\"value\": null, \"quote\": null},\n  \"paymentTerms\": {\"value\": null, \"quote\": null},\n  \"fees\": [\n    {\n      \"kind\": {\"value\": \"GOODS\", \"quote\": \"Unit price: USD 3.20 per pc\"},\n      \"description\": {\"value\": \"Model BT-1500 insulated bottle unit price\", \"quote\": \"Unit price: USD 3.20 per pc\"},\n      \"amount\": {\"amount\": \"3.20\", \"currency\": \"USD\", \"quote\": \"Unit price: USD 3.20 per pc\"},\n      \"amountBasis\": {\"value\": \"PER_UNIT\", \"quote\": \"Unit price: USD 3.20 per pc\"},\n      \"payer\": {\"value\": null, \"quote\": null},\n      \"payee\": {\"value\": null, \"quote\": null},\n      \"includedInQuote\": {\"value\": null, \"quote\": null},\n      \"statedAs\": {\"value\": \"FIRM\", \"quote\": \"Unit price: USD 3.20 per pc\"}\n    }\n  ]\n}"
+   }
+  },
+  "LA-3": {
+   "title": "[SYNTHETIC / LIVE TEST] LA-3 multi-item cross references",
+   "version": {
+    "id": "qv_6d780c76-cf11-49b8-90a6-6e3c04bc9a74",
+    "seriesId": "qs_e6a31571-7610-4b04-aaca-2af85b1a0af0",
+    "requestId": "pr_9a79283a-eaaa-4725-bde9-29ad9ebdf6b0",
+    "versionNumber": 1,
+    "latestVersionNumber": 1,
+    "contentKind": "FULL_QUOTE",
+    "supplementsVersionId": null,
+    "supplementsVersionNumber": null,
+    "rawTextSha256": "657aa5bf96fedb7922a8c44caf1cdd5b2cc9e422b9fb5fcf0592234b33a822e9",
+    "requestRevision": 1,
+    "snapshot": {
+     "snapshotVersion": 2,
+     "capturedAt": "2026-10-25T11:48:12.125Z",
+     "record": {
+      "id": "pr_9a79283a-eaaa-4725-bde9-29ad9ebdf6b0",
+      "title": "[SYNTHETIC / LIVE TEST] LA-3 multi-item cross references",
+      "buyerType": "BUSINESS",
+      "buyerCompany": "Synthetic buyer (live acceptance)",
+      "buyerPersonName": null,
+      "supplierName": null,
+      "shipFrom": null,
+      "shipTo": null,
+      "budgetCurrency": null,
+      "budgetMaxMinor": null,
+      "budgetMax": null,
+      "requiredShipDate": null,
+      "expectedDeliveryDate": null,
+      "paymentTerms": null,
+      "additionalRequirements": null,
+      "status": "DRAFT",
+      "source": "USER_INPUT",
+      "revision": 1,
+      "createdAt": "2026-10-25T11:48:12.062Z",
+      "updatedAt": "2026-10-25T11:48:12.062Z",
+      "items": [
+       {
+        "id": "pri_5051c2a0-e31d-4da3-b404-3bf5d407c84a",
+        "position": 1,
+        "name": "Bamboo lunch box, 2-tier",
+        "quantity": 300,
+        "unit": "sets",
+        "material": null,
+        "specification": null,
+        "customization": null,
+        "notes": null
+       },
+       {
+        "id": "pri_08bb286b-416f-462b-b6a7-e861f31da4ea",
+        "position": 2,
+        "name": "Bamboo cutlery set",
+        "quantity": 600,
+        "unit": "sets",
+        "material": null,
+        "specification": null,
+        "customization": null,
+        "notes": null
+       }
+      ]
+     }
+    },
+    "rawText": "> SYNTHETIC / DEMO — fictional quote for TradeProof tests. Not a real supplier or price.\n\nQuotation No.: LA-003\nDate: 2026-10-22\n\nItem A: Bamboo lunch box, 2-tier — 300 sets @ USD 5.50\nItem B: Bamboo cutlery set (fork, spoon, chopsticks) — 600 sets @ USD 1.20\nGift packaging for Item A only: USD 0.30 per set, not included in the unit price above\nTotal goods: USD 2,370.00\n\nLead time: 40 days after deposit\n"
+   },
+   "base": null,
+   "run": {
+    "id": "qx_a802f268-72a9-4009-bf22-87920b73c444",
+    "versionId": "qv_6d780c76-cf11-49b8-90a6-6e3c04bc9a74",
+    "seriesId": "qs_e6a31571-7610-4b04-aaca-2af85b1a0af0",
+    "requestId": "pr_9a79283a-eaaa-4725-bde9-29ad9ebdf6b0",
+    "inputSha256": "657aa5bf96fedb7922a8c44caf1cdd5b2cc9e422b9fb5fcf0592234b33a822e9",
+    "requestRevision": 1,
+    "contextVersionId": null,
+    "mode": "LIVE",
+    "provider": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "quote-extract-2026-10-24.1",
+    "schemaVersion": "extraction-result-2",
+    "status": "SUCCEEDED",
+    "interrupted": false,
+    "errorCode": null,
+    "errorMessage": null,
+    "attempts": 1,
+    "inputTokens": 1935,
+    "outputTokens": 1315,
+    "startedAt": "2026-10-25T11:48:12.172Z",
+    "finishedAt": "2026-10-25T11:48:19.043Z",
+    "result": {
+     "schemaVersion": "extraction-result-2",
+     "checkRules": "value-check-2026-10-25.1",
+     "contentKind": "FULL_QUOTE",
+     "supplierQuoteNumbers": [
+      {
+       "value": "LA-003",
+       "modelValue": "LA-003",
+       "modelExcerpt": "Quotation No.: LA-003",
+       "kind": "VERBATIM",
+       "check": "SUPPORTED",
+       "evidence": {
+        "excerpt": "Quotation No.: LA-003",
+        "start": 90,
+        "end": 111,
+        "line": 3,
+        "occurrences": 1
+       },
+       "note": null,
+       "valueCheck": {
+        "rules": "value-check-2026-10-25.1",
+        "field": "TEXT",
+        "outcome": "MATCH",
+        "matches": [],
+        "note": null
+       }
+      }
+     ],
+     "quoteDate": {
+      "value": "2026-10-22",
+      "modelValue": "2026-10-22",
+      "modelExcerpt": "Date: 2026-10-22",
+      "kind": "VERBATIM",
+      "check": "SUPPORTED",
+      "evidence": {
+       "excerpt": "Date: 2026-10-22",
+       "start": 112,
+       "end": 128,
+       "line": 4,
+       "occurrences": 1
+      },
+      "note": null,
+      "valueCheck": {
+       "rules": "value-check-2026-10-25.1",
+       "field": "TEXT",
+       "outcome": "MATCH",
+       "matches": [],
+       "note": null
+      }
+     },
+     "currency": {
+      "value": "USD",
+      "modelValue": "USD",
+      "modelExcerpt": "USD 5.50",
+      "kind": "VERBATIM",
+      "check": "SUPPORTED",
+      "evidence": {
+       "excerpt": "USD 5.50",
+       "start": 176,
+       "end": 184,
+       "line": 6,
+       "occurrences": 1
+      },
+      "note": null
+     },
+     "items": [
+      {
+       "name": {
+        "value": "Bamboo lunch box, 2-tier",
+        "modelValue": "Bamboo lunch box, 2-tier",
+        "modelExcerpt": "Bamboo lunch box, 2-tier",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Bamboo lunch box, 2-tier",
+         "start": 138,
+         "end": 162,
+         "line": 6,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "TEXT",
+         "outcome": "MATCH",
+         "matches": [],
+         "note": null
+        }
+       },
+       "quantity": {
+        "value": 300,
+        "modelValue": "300",
+        "modelExcerpt": "300 sets",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "300 sets",
+         "start": 165,
+         "end": 173,
+         "line": 6,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "QUANTITY",
+         "outcome": "MATCH",
+         "matches": [
+          {
+           "start": 0,
+           "end": 3,
+           "raw": "300"
+          }
+         ],
+         "note": null
+        }
+       },
+       "unit": {
+        "value": "sets",
+        "modelValue": "sets",
+        "modelExcerpt": "300 sets",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "300 sets",
+         "start": 165,
+         "end": 173,
+         "line": 6,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "TEXT",
+         "outcome": "MATCH",
+         "matches": [],
+         "note": null
+        }
+       },
+       "material": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "VERBATIM",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "specification": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "VERBATIM",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "logo": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "VERBATIM",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "unitPrice": {
+        "value": {
+         "amountText": "5.50",
+         "currency": "USD",
+         "minor": 550
+        },
+        "modelValue": "USD 5.50",
+        "modelExcerpt": "300 sets @ USD 5.50",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "300 sets @ USD 5.50",
+         "start": 165,
+         "end": 184,
+         "line": 6,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "AMOUNT",
+         "outcome": "MATCH",
+         "matches": [
+          {
+           "start": 15,
+           "end": 19,
+           "raw": "5.50"
+          }
+         ],
+         "note": null
+        }
+       },
+       "match": {
+        "status": "PROPOSED",
+        "candidateIds": [
+         "pri_5051c2a0-e31d-4da3-b404-3bf5d407c84a"
+        ],
+        "rejectedIds": []
+       }
+      },
+      {
+       "name": {
+        "value": "Bamboo cutlery set",
+        "modelValue": "Bamboo cutlery set",
+        "modelExcerpt": "Bamboo cutlery set",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Bamboo cutlery set",
+         "start": 193,
+         "end": 211,
+         "line": 7,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "TEXT",
+         "outcome": "MATCH",
+         "matches": [],
+         "note": null
+        }
+       },
+       "quantity": {
+        "value": 600,
+        "modelValue": "600",
+        "modelExcerpt": "600 sets",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "600 sets",
+         "start": 240,
+         "end": 248,
+         "line": 7,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "QUANTITY",
+         "outcome": "MATCH",
+         "matches": [
+          {
+           "start": 0,
+           "end": 3,
+           "raw": "600"
+          }
+         ],
+         "note": null
+        }
+       },
+       "unit": {
+        "value": "sets",
+        "modelValue": "sets",
+        "modelExcerpt": "600 sets",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "600 sets",
+         "start": 240,
+         "end": 248,
+         "line": 7,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "TEXT",
+         "outcome": "MATCH",
+         "matches": [],
+         "note": null
+        }
+       },
+       "material": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "VERBATIM",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "specification": {
+        "value": "fork, spoon, chopsticks",
+        "modelValue": "fork, spoon, chopsticks",
+        "modelExcerpt": "(fork, spoon, chopsticks)",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "(fork, spoon, chopsticks)",
+         "start": 212,
+         "end": 237,
+         "line": 7,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "TEXT",
+         "outcome": "MATCH",
+         "matches": [],
+         "note": null
+        }
+       },
+       "logo": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "VERBATIM",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "unitPrice": {
+        "value": {
+         "amountText": "1.20",
+         "currency": "USD",
+         "minor": 120
+        },
+        "modelValue": "USD 1.20",
+        "modelExcerpt": "600 sets @ USD 1.20",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "600 sets @ USD 1.20",
+         "start": 240,
+         "end": 259,
+         "line": 7,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "AMOUNT",
+         "outcome": "MATCH",
+         "matches": [
+          {
+           "start": 15,
+           "end": 19,
+           "raw": "1.20"
+          }
+         ],
+         "note": null
+        }
+       },
+       "match": {
+        "status": "PROPOSED",
+        "candidateIds": [
+         "pri_08bb286b-416f-462b-b6a7-e861f31da4ea"
+        ],
+        "rejectedIds": []
+       }
+      }
+     ],
+     "total": {
+      "value": {
+       "amountText": "2,370.00",
+       "currency": "USD",
+       "minor": 237000
+      },
+      "modelValue": "USD 2,370.00",
+      "modelExcerpt": "Total goods: USD 2,370.00",
+      "kind": "VERBATIM",
+      "check": "SUPPORTED",
+      "evidence": {
+       "excerpt": "Total goods: USD 2,370.00",
+       "start": 347,
+       "end": 372,
+       "line": 9,
+       "occurrences": 1
+      },
+      "note": null,
+      "valueCheck": {
+       "rules": "value-check-2026-10-25.1",
+       "field": "AMOUNT",
+       "outcome": "MATCH",
+       "matches": [
+        {
+         "start": 17,
+         "end": 25,
+         "raw": "2,370.00"
+        }
+       ],
+       "note": null
+      }
+     },
+     "incoterm": {
+      "value": null,
+      "modelValue": null,
+      "modelExcerpt": null,
+      "kind": "VERBATIM",
+      "check": "NOT_STATED",
+      "evidence": null,
+      "note": null
+     },
+     "leadTime": {
+      "value": "40 days after deposit",
+      "modelValue": "40 days after deposit",
+      "modelExcerpt": "Lead time: 40 days after deposit",
+      "kind": "VERBATIM",
+      "check": "SUPPORTED",
+      "evidence": {
+       "excerpt": "Lead time: 40 days after deposit",
+       "start": 374,
+       "end": 406,
+       "line": 11,
+       "occurrences": 1
+      },
+      "note": null,
+      "valueCheck": {
+       "rules": "value-check-2026-10-25.1",
+       "field": "TEXT",
+       "outcome": "MATCH",
+       "matches": [],
+       "note": null
+      }
+     },
+     "paymentTerms": {
+      "value": null,
+      "modelValue": null,
+      "modelExcerpt": null,
+      "kind": "VERBATIM",
+      "check": "NOT_STATED",
+      "evidence": null,
+      "note": null
+     },
+     "fees": [
+      {
+       "kind": {
+        "value": "GOODS",
+        "modelValue": "GOODS",
+        "modelExcerpt": "Total goods: USD 2,370.00",
+        "kind": "INTERPRETED",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Total goods: USD 2,370.00",
+         "start": 347,
+         "end": 372,
+         "line": 9,
+         "occurrences": 1
+        },
+        "note": "The model's reading of the excerpt — check it."
+       },
+       "description": {
+        "value": "Total goods",
+        "modelValue": "Total goods",
+        "modelExcerpt": "Total goods: USD 2,370.00",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Total goods: USD 2,370.00",
+         "start": 347,
+         "end": 372,
+         "line": 9,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "TEXT",
+         "outcome": "MATCH",
+         "matches": [],
+         "note": null
+        }
+       },
+       "amount": {
+        "value": {
+         "amountText": "2,370.00",
+         "currency": "USD",
+         "minor": 237000
+        },
+        "modelValue": "USD 2,370.00",
+        "modelExcerpt": "Total goods: USD 2,370.00",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Total goods: USD 2,370.00",
+         "start": 347,
+         "end": 372,
+         "line": 9,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "AMOUNT",
+         "outcome": "MATCH",
+         "matches": [
+          {
+           "start": 17,
+           "end": 25,
+           "raw": "2,370.00"
+          }
+         ],
+         "note": null
+        }
+       },
+       "amountBasis": {
+        "value": "LUMP_SUM",
+        "modelValue": "LUMP_SUM",
+        "modelExcerpt": "Total goods: USD 2,370.00",
+        "kind": "INTERPRETED",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Total goods: USD 2,370.00",
+         "start": 347,
+         "end": 372,
+         "line": 9,
+         "occurrences": 1
+        },
+        "note": "The model's reading of the excerpt — check it."
+       },
+       "payer": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "INTERPRETED",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "payee": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "INTERPRETED",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "includedInQuote": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "INTERPRETED",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "statedAs": {
+        "value": "FIRM",
+        "modelValue": "FIRM",
+        "modelExcerpt": "Total goods: USD 2,370.00",
+        "kind": "INTERPRETED",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Total goods: USD 2,370.00",
+         "start": 347,
+         "end": 372,
+         "line": 9,
+         "occurrences": 1
+        },
+        "note": "The model's reading of the excerpt — check it."
+       }
+      },
+      {
+       "kind": {
+        "value": "PACKAGING",
+        "modelValue": "PACKAGING",
+        "modelExcerpt": "Gift packaging for Item A only",
+        "kind": "INTERPRETED",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Gift packaging for Item A only",
+         "start": 260,
+         "end": 290,
+         "line": 8,
+         "occurrences": 1
+        },
+        "note": "The model's reading of the excerpt — check it."
+       },
+       "description": {
+        "value": "Gift packaging for Item A only",
+        "modelValue": "Gift packaging for Item A only",
+        "modelExcerpt": "Gift packaging for Item A only",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Gift packaging for Item A only",
+         "start": 260,
+         "end": 290,
+         "line": 8,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "TEXT",
+         "outcome": "MATCH",
+         "matches": [],
+         "note": null
+        }
+       },
+       "amount": {
+        "value": {
+         "amountText": "0.30",
+         "currency": "USD",
+         "minor": 30
+        },
+        "modelValue": "USD 0.30",
+        "modelExcerpt": "USD 0.30 per set",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "USD 0.30 per set",
+         "start": 292,
+         "end": 308,
+         "line": 8,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "AMOUNT",
+         "outcome": "MATCH",
+         "matches": [
+          {
+           "start": 4,
+           "end": 8,
+           "raw": "0.30"
+          }
+         ],
+         "note": null
+        }
+       },
+       "amountBasis": {
+        "value": "PER_UNIT",
+        "modelValue": "PER_UNIT",
+        "modelExcerpt": "USD 0.30 per set",
+        "kind": "INTERPRETED",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "USD 0.30 per set",
+         "start": 292,
+         "end": 308,
+         "line": 8,
+         "occurrences": 1
+        },
+        "note": "The model's reading of the excerpt — check it."
+       },
+       "payer": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "INTERPRETED",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "payee": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "INTERPRETED",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "includedInQuote": {
+        "value": "NOT_INCLUDED",
+        "modelValue": "NOT_INCLUDED",
+        "modelExcerpt": "not included in the unit price above",
+        "kind": "INTERPRETED",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "not included in the unit price above",
+         "start": 310,
+         "end": 346,
+         "line": 8,
+         "occurrences": 1
+        },
+        "note": "The model's reading of the excerpt — check it."
+       },
+       "statedAs": {
+        "value": "FIRM",
+        "modelValue": "FIRM",
+        "modelExcerpt": "USD 0.30 per set",
+        "kind": "INTERPRETED",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "USD 0.30 per set",
+         "start": 292,
+         "end": 308,
+         "line": 8,
+         "occurrences": 1
+        },
+        "note": "The model's reading of the excerpt — check it."
+       }
+      }
+     ],
+     "arithmetic": [
+      {
+       "code": "TOTAL_MATCHES_ITEMS",
+       "message": "Quantity × unit price = USD 2370.00, equal to the stated total."
+      }
+     ],
+     "costSummary": {
+      "lines": [
+       {
+        "currency": "USD",
+        "quotedTotalMinor": 237000,
+        "extraKnownMinor": 0,
+        "extraKnownCount": 0
+       }
+      ],
+      "unknownFeeCount": 2
+     },
+     "counts": {
+      "SUPPORTED": 25,
+      "NOT_STATED": 12,
+      "NO_EXCERPT": 0,
+      "NOT_IN_TEXT": 0,
+      "ONLY_IN_CONTEXT": 0,
+      "VALUE_NOT_IN_EXCERPT": 0,
+      "SUSPICIOUS_EXCERPT": 0,
+      "INVALID_VALUE": 0,
+      "AMBIGUOUS_VALUE": 0
+     }
+    },
+    "rawOutput": "{\n  \"supplierQuoteNumbers\": [\n    {\"value\": \"LA-003\", \"quote\": \"Quotation No.: LA-003\"}\n  ],\n  \"quoteDate\": {\"value\": \"2026-10-22\", \"quote\": \"Date: 2026-10-22\"},\n  \"currency\": {\"value\": \"USD\", \"quote\": \"USD 5.50\"},\n  \"items\": [\n    {\n      \"name\": {\"value\": \"Bamboo lunch box, 2-tier\", \"quote\": \"Bamboo lunch box, 2-tier\"},\n      \"quantity\": {\"value\": \"300\", \"quote\": \"300 sets\"},\n      \"unit\": {\"value\": \"sets\", \"quote\": \"300 sets\"},\n      \"material\": {\"value\": null, \"quote\": null},\n      \"specification\": {\"value\": null, \"quote\": null},\n      \"logo\": {\"value\": null, \"quote\": null},\n      \"unitPrice\": {\"amount\": \"5.50\", \"currency\": \"USD\", \"quote\": \"300 sets @ USD 5.50\"},\n      \"requestItemCandidates\": [\"pri_5051c2a0-e31d-4da3-b404-3bf5d407c84a\"]\n    },\n    {\n      \"name\": {\"value\": \"Bamboo cutlery set\", \"quote\": \"Bamboo cutlery set\"},\n      \"quantity\": {\"value\": \"600\", \"quote\": \"600 sets\"},\n      \"unit\": {\"value\": \"sets\", \"quote\": \"600 sets\"},\n      \"material\": {\"value\": null, \"quote\": null},\n      \"specification\": {\"value\": \"fork, spoon, chopsticks\", \"quote\": \"(fork, spoon, chopsticks)\"},\n      \"logo\": {\"value\": null, \"quote\": null},\n      \"unitPrice\": {\"amount\": \"1.20\", \"currency\": \"USD\", \"quote\": \"600 sets @ USD 1.20\"},\n      \"requestItemCandidates\": [\"pri_08bb286b-416f-462b-b6a7-e861f31da4ea\"]\n    }\n  ],\n  \"total\": {\"amount\": \"2,370.00\", \"currency\": \"USD\", \"quote\": \"Total goods: USD 2,370.00\"},\n  \"incoterm\": {\"value\": null, \"quote\": null},\n  \"leadTime\": {\"value\": \"40 days after deposit\", \"quote\": \"Lead time: 40 days after deposit\"},\n  \"paymentTerms\": {\"value\": null, \"quote\": null},\n  \"fees\": [\n    {\n      \"kind\": {\"value\": \"GOODS\", \"quote\": \"Total goods: USD 2,370.00\"},\n      \"description\": {\"value\": \"Total goods\", \"quote\": \"Total goods: USD 2,370.00\"},\n      \"amount\": {\"amount\": \"2,370.00\", \"currency\": \"USD\", \"quote\": \"Total goods: USD 2,370.00\"},\n      \"amountBasis\": {\"value\": \"LUMP_SUM\", \"quote\": \"Total goods: USD 2,370.00\"},\n      \"payer\": {\"value\": null, \"quote\": null},\n      \"payee\": {\"value\": null, \"quote\": null},\n      \"includedInQuote\": {\"value\": null, \"quote\": null},\n      \"statedAs\": {\"value\": \"FIRM\", \"quote\": \"Total goods: USD 2,370.00\"}\n    },\n    {\n      \"kind\": {\"value\": \"PACKAGING\", \"quote\": \"Gift packaging for Item A only\"},\n      \"description\": {\"value\": \"Gift packaging for Item A only\", \"quote\": \"Gift packaging for Item A only\"},\n      \"amount\": {\"amount\": \"0.30\", \"currency\": \"USD\", \"quote\": \"USD 0.30 per set\"},\n      \"amountBasis\": {\"value\": \"PER_UNIT\", \"quote\": \"USD 0.30 per set\"},\n      \"payer\": {\"value\": null, \"quote\": null},\n      \"payee\": {\"value\": null, \"quote\": null},\n      \"includedInQuote\": {\"value\": \"NOT_INCLUDED\", \"quote\": \"not included in the unit price above\"},\n      \"statedAs\": {\"value\": \"FIRM\", \"quote\": \"USD 0.30 per set\"}\n    }\n  ]\n}"
+   }
+  },
+  "LA-4": {
+   "title": "[SYNTHETIC / LIVE TEST] LA-4 supplement linked to v1",
+   "version": {
+    "id": "qv_7d9840da-bf21-4667-a59f-529970a60641",
+    "seriesId": "qs_952b754c-17e9-4980-97ad-1b0322cd5796",
+    "requestId": "pr_e1948c0c-f2f4-4e93-b597-02e8350118b4",
+    "versionNumber": 3,
+    "latestVersionNumber": 3,
+    "contentKind": "SUPPLEMENT",
+    "supplementsVersionId": "qv_681eb539-e04a-40ef-a699-8d9162cd6621",
+    "supplementsVersionNumber": 1,
+    "rawTextSha256": "be0a4ccfbd1377b49ddcb556cda19ed9d1372a45f72e2dc50e9223f2b9633a07",
+    "requestRevision": 1,
+    "snapshot": {
+     "snapshotVersion": 2,
+     "capturedAt": "2026-10-25T11:48:20.452Z",
+     "record": {
+      "id": "pr_e1948c0c-f2f4-4e93-b597-02e8350118b4",
+      "title": "[SYNTHETIC / LIVE TEST] LA-4 supplement linked to v1",
+      "buyerType": "BUSINESS",
+      "buyerCompany": "Synthetic buyer (live acceptance)",
+      "buyerPersonName": null,
+      "supplierName": null,
+      "shipFrom": null,
+      "shipTo": null,
+      "budgetCurrency": null,
+      "budgetMaxMinor": null,
+      "budgetMax": null,
+      "requiredShipDate": null,
+      "expectedDeliveryDate": null,
+      "paymentTerms": null,
+      "additionalRequirements": null,
+      "status": "DRAFT",
+      "source": "USER_INPUT",
+      "revision": 1,
+      "createdAt": "2026-10-25T11:48:19.522Z",
+      "updatedAt": "2026-10-25T11:48:19.522Z",
+      "items": [
+       {
+        "id": "pri_cb862f9c-a535-430f-b078-ee5b3ab096dd",
+        "position": 1,
+        "name": "Cotton tote bag",
+        "quantity": 1000,
+        "unit": "pcs",
+        "material": null,
+        "specification": null,
+        "customization": null,
+        "notes": null
+       }
+      ]
+     }
+    },
+    "rawText": "> SYNTHETIC / DEMO — fictional supplement for TradeProof tests.\n\nSupplement to quotation LA-004 dated 2026-10-15:\nLead time changes to 35 days after deposit because of the factory holiday.\n"
+   },
+   "base": {
+    "id": "qv_681eb539-e04a-40ef-a699-8d9162cd6621",
+    "seriesId": "qs_952b754c-17e9-4980-97ad-1b0322cd5796",
+    "requestId": "pr_e1948c0c-f2f4-4e93-b597-02e8350118b4",
+    "versionNumber": 1,
+    "latestVersionNumber": 3,
+    "contentKind": "FULL_QUOTE",
+    "supplementsVersionId": null,
+    "supplementsVersionNumber": null,
+    "rawTextSha256": "66472f8d34321497c0bd56f09de739db9094f885564d326a45841c1c39234cdc",
+    "requestRevision": 1,
+    "snapshot": {
+     "snapshotVersion": 2,
+     "capturedAt": "2026-10-25T11:48:19.584Z",
+     "record": {
+      "id": "pr_e1948c0c-f2f4-4e93-b597-02e8350118b4",
+      "title": "[SYNTHETIC / LIVE TEST] LA-4 supplement linked to v1",
+      "buyerType": "BUSINESS",
+      "buyerCompany": "Synthetic buyer (live acceptance)",
+      "buyerPersonName": null,
+      "supplierName": null,
+      "shipFrom": null,
+      "shipTo": null,
+      "budgetCurrency": null,
+      "budgetMaxMinor": null,
+      "budgetMax": null,
+      "requiredShipDate": null,
+      "expectedDeliveryDate": null,
+      "paymentTerms": null,
+      "additionalRequirements": null,
+      "status": "DRAFT",
+      "source": "USER_INPUT",
+      "revision": 1,
+      "createdAt": "2026-10-25T11:48:19.522Z",
+      "updatedAt": "2026-10-25T11:48:19.522Z",
+      "items": [
+       {
+        "id": "pri_cb862f9c-a535-430f-b078-ee5b3ab096dd",
+        "position": 1,
+        "name": "Cotton tote bag",
+        "quantity": 1000,
+        "unit": "pcs",
+        "material": null,
+        "specification": null,
+        "customization": null,
+        "notes": null
+       }
+      ]
+     }
+    },
+    "rawText": "> SYNTHETIC / DEMO — fictional quote for TradeProof tests. Not a real supplier or price.\n\nQuotation No.: LA-004\nDate: 2026-10-15\n\nCotton tote bag, 38 x 42 cm, natural colour — 1000 pcs @ USD 0.90\nTotal: USD 900.00\nTrade term: FOB Shanghai\nLead time: 25 days after deposit\n"
+   },
+   "run": {
+    "id": "qx_e016bfe8-3c01-454e-9ccf-439f51413a4e",
+    "versionId": "qv_7d9840da-bf21-4667-a59f-529970a60641",
+    "seriesId": "qs_952b754c-17e9-4980-97ad-1b0322cd5796",
+    "requestId": "pr_e1948c0c-f2f4-4e93-b597-02e8350118b4",
+    "inputSha256": "be0a4ccfbd1377b49ddcb556cda19ed9d1372a45f72e2dc50e9223f2b9633a07",
+    "requestRevision": 1,
+    "contextVersionId": "qv_681eb539-e04a-40ef-a699-8d9162cd6621",
+    "mode": "LIVE",
+    "provider": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "quote-extract-2026-10-24.1",
+    "schemaVersion": "extraction-result-2",
+    "status": "SUCCEEDED",
+    "interrupted": false,
+    "errorCode": null,
+    "errorMessage": null,
+    "attempts": 1,
+    "inputTokens": 1986,
+    "outputTokens": 280,
+    "startedAt": "2026-10-25T11:48:20.543Z",
+    "finishedAt": "2026-10-25T11:48:23.364Z",
+    "result": {
+     "schemaVersion": "extraction-result-2",
+     "checkRules": "value-check-2026-10-25.1",
+     "contentKind": "SUPPLEMENT",
+     "supplierQuoteNumbers": [
+      {
+       "value": "LA-004",
+       "modelValue": "LA-004",
+       "modelExcerpt": "Supplement to quotation LA-004 dated 2026-10-15",
+       "kind": "VERBATIM",
+       "check": "SUPPORTED",
+       "evidence": {
+        "excerpt": "Supplement to quotation LA-004 dated 2026-10-15",
+        "start": 65,
+        "end": 112,
+        "line": 3,
+        "occurrences": 1
+       },
+       "note": null,
+       "valueCheck": {
+        "rules": "value-check-2026-10-25.1",
+        "field": "TEXT",
+        "outcome": "MATCH",
+        "matches": [],
+        "note": null
+       }
+      }
+     ],
+     "quoteDate": {
+      "value": null,
+      "modelValue": null,
+      "modelExcerpt": null,
+      "kind": "VERBATIM",
+      "check": "NOT_STATED",
+      "evidence": null,
+      "note": null
+     },
+     "currency": {
+      "value": null,
+      "modelValue": null,
+      "modelExcerpt": null,
+      "kind": "VERBATIM",
+      "check": "NOT_STATED",
+      "evidence": null,
+      "note": null
+     },
+     "items": [],
+     "total": {
+      "value": null,
+      "modelValue": null,
+      "modelExcerpt": null,
+      "kind": "VERBATIM",
+      "check": "NOT_STATED",
+      "evidence": null,
+      "note": null
+     },
+     "incoterm": {
+      "value": null,
+      "modelValue": null,
+      "modelExcerpt": null,
+      "kind": "VERBATIM",
+      "check": "NOT_STATED",
+      "evidence": null,
+      "note": null
+     },
+     "leadTime": {
+      "value": "35 days after deposit",
+      "modelValue": "35 days after deposit",
+      "modelExcerpt": "Lead time changes to 35 days after deposit because of the factory holiday.",
+      "kind": "VERBATIM",
+      "check": "SUPPORTED",
+      "evidence": {
+       "excerpt": "Lead time changes to 35 days after deposit because of the factory holiday.",
+       "start": 114,
+       "end": 188,
+       "line": 4,
+       "occurrences": 1
+      },
+      "note": null,
+      "valueCheck": {
+       "rules": "value-check-2026-10-25.1",
+       "field": "TEXT",
+       "outcome": "MATCH",
+       "matches": [],
+       "note": null
+      }
+     },
+     "paymentTerms": {
+      "value": null,
+      "modelValue": null,
+      "modelExcerpt": null,
+      "kind": "VERBATIM",
+      "check": "NOT_STATED",
+      "evidence": null,
+      "note": null
+     },
+     "fees": [],
+     "arithmetic": [
+      {
+       "code": "CANNOT_CHECK_TOTAL",
+       "message": "No total supported by the text."
+      }
+     ],
+     "costSummary": {
+      "lines": [],
+      "unknownFeeCount": 0
+     },
+     "counts": {
+      "SUPPORTED": 2,
+      "NOT_STATED": 5,
+      "NO_EXCERPT": 0,
+      "NOT_IN_TEXT": 0,
+      "ONLY_IN_CONTEXT": 0,
+      "VALUE_NOT_IN_EXCERPT": 0,
+      "SUSPICIOUS_EXCERPT": 0,
+      "INVALID_VALUE": 0,
+      "AMBIGUOUS_VALUE": 0
+     }
+    },
+    "rawOutput": "{\n  \"supplierQuoteNumbers\": [\n    {\n      \"value\": \"LA-004\",\n      \"quote\": \"Supplement to quotation LA-004 dated 2026-10-15\"\n    }\n  ],\n  \"quoteDate\": {\n    \"value\": null,\n    \"quote\": null\n  },\n  \"currency\": {\n    \"value\": null,\n    \"quote\": null\n  },\n  \"items\": [],\n  \"total\": {\n    \"amount\": null,\n    \"currency\": null,\n    \"quote\": null\n  },\n  \"incoterm\": {\n    \"value\": null,\n    \"quote\": null\n  },\n  \"leadTime\": {\n    \"value\": \"35 days after deposit\",\n    \"quote\": \"Lead time changes to 35 days after deposit because of the factory holiday.\"\n  },\n  \"paymentTerms\": {\n    \"value\": null,\n    \"quote\": null\n  },\n  \"fees\": []\n}"
+   }
+  },
+  "LA-5": {
+   "title": "[SYNTHETIC / LIVE TEST] LA-5 missing or vague fees and terms",
+   "version": {
+    "id": "qv_90bdf70d-31cb-4c5a-88f8-a5d59e014030",
+    "seriesId": "qs_d40e3dd2-6726-4896-807e-dfeb94a25088",
+    "requestId": "pr_17c9f0c5-31e4-4923-bbb3-bb6648da2619",
+    "versionNumber": 1,
+    "latestVersionNumber": 1,
+    "contentKind": "FULL_QUOTE",
+    "supplementsVersionId": null,
+    "supplementsVersionNumber": null,
+    "rawTextSha256": "1673b9b50a4bc108c0baa9c6b4ad8d9d5f7fc7ed8937f02dc36873433e66f20c",
+    "requestRevision": 1,
+    "snapshot": {
+     "snapshotVersion": 2,
+     "capturedAt": "2026-10-25T11:48:23.916Z",
+     "record": {
+      "id": "pr_17c9f0c5-31e4-4923-bbb3-bb6648da2619",
+      "title": "[SYNTHETIC / LIVE TEST] LA-5 missing or vague fees and terms",
+      "buyerType": "BUSINESS",
+      "buyerCompany": "Synthetic buyer (live acceptance)",
+      "buyerPersonName": null,
+      "supplierName": null,
+      "shipFrom": null,
+      "shipTo": null,
+      "budgetCurrency": null,
+      "budgetMaxMinor": null,
+      "budgetMax": null,
+      "requiredShipDate": null,
+      "expectedDeliveryDate": null,
+      "paymentTerms": null,
+      "additionalRequirements": null,
+      "status": "DRAFT",
+      "source": "USER_INPUT",
+      "revision": 1,
+      "createdAt": "2026-10-25T11:48:23.854Z",
+      "updatedAt": "2026-10-25T11:48:23.854Z",
+      "items": [
+       {
+        "id": "pri_2691f530-43cf-450c-a301-549cbe6c4203",
+        "position": 1,
+        "name": "Ceramic mug 350 ml",
+        "quantity": 400,
+        "unit": "pcs",
+        "material": null,
+        "specification": null,
+        "customization": null,
+        "notes": null
+       }
+      ]
+     }
+    },
+    "rawText": "> SYNTHETIC / DEMO — fictional quote for TradeProof tests. Not a real supplier or price.\n\nQuotation No.: LA-005\n\nCeramic mug 350 ml, white glaze — 400 pcs @ $2.80\nTotal: $1,120.00\n\nFreight: to be advised\nImport duty and GST: buyer's responsibility, amount depends on customs\nPayment: to be agreed after sample approval\n"
+   },
+   "base": null,
+   "run": {
+    "id": "qx_ac0a5762-e647-4d39-b909-b1c249511f58",
+    "versionId": "qv_90bdf70d-31cb-4c5a-88f8-a5d59e014030",
+    "seriesId": "qs_d40e3dd2-6726-4896-807e-dfeb94a25088",
+    "requestId": "pr_17c9f0c5-31e4-4923-bbb3-bb6648da2619",
+    "inputSha256": "1673b9b50a4bc108c0baa9c6b4ad8d9d5f7fc7ed8937f02dc36873433e66f20c",
+    "requestRevision": 1,
+    "contextVersionId": null,
+    "mode": "LIVE",
+    "provider": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "quote-extract-2026-10-24.1",
+    "schemaVersion": "extraction-result-2",
+    "status": "INCOMPLETE",
+    "interrupted": false,
+    "errorCode": null,
+    "errorMessage": null,
+    "attempts": 1,
+    "inputTokens": 1802,
+    "outputTokens": 1520,
+    "startedAt": "2026-10-25T11:48:23.971Z",
+    "finishedAt": "2026-10-25T11:48:31.852Z",
+    "result": {
+     "schemaVersion": "extraction-result-2",
+     "checkRules": "value-check-2026-10-25.1",
+     "contentKind": "FULL_QUOTE",
+     "supplierQuoteNumbers": [
+      {
+       "value": "LA-005",
+       "modelValue": "LA-005",
+       "modelExcerpt": "Quotation No.: LA-005",
+       "kind": "VERBATIM",
+       "check": "SUPPORTED",
+       "evidence": {
+        "excerpt": "Quotation No.: LA-005",
+        "start": 90,
+        "end": 111,
+        "line": 3,
+        "occurrences": 1
+       },
+       "note": null,
+       "valueCheck": {
+        "rules": "value-check-2026-10-25.1",
+        "field": "TEXT",
+        "outcome": "MATCH",
+        "matches": [],
+        "note": null
+       }
+      }
+     ],
+     "quoteDate": {
+      "value": null,
+      "modelValue": null,
+      "modelExcerpt": null,
+      "kind": "VERBATIM",
+      "check": "NOT_STATED",
+      "evidence": null,
+      "note": null
+     },
+     "currency": {
+      "value": null,
+      "modelValue": null,
+      "modelExcerpt": null,
+      "kind": "VERBATIM",
+      "check": "NOT_STATED",
+      "evidence": null,
+      "note": null
+     },
+     "items": [
+      {
+       "name": {
+        "value": "Ceramic mug 350 ml, white glaze",
+        "modelValue": "Ceramic mug 350 ml, white glaze",
+        "modelExcerpt": "Ceramic mug 350 ml, white glaze",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Ceramic mug 350 ml, white glaze",
+         "start": 113,
+         "end": 144,
+         "line": 5,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "TEXT",
+         "outcome": "MATCH",
+         "matches": [],
+         "note": null
+        }
+       },
+       "quantity": {
+        "value": 400,
+        "modelValue": "400",
+        "modelExcerpt": "400 pcs",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "400 pcs",
+         "start": 147,
+         "end": 154,
+         "line": 5,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "QUANTITY",
+         "outcome": "MATCH",
+         "matches": [
+          {
+           "start": 0,
+           "end": 3,
+           "raw": "400"
+          }
+         ],
+         "note": null
+        }
+       },
+       "unit": {
+        "value": "pcs",
+        "modelValue": "pcs",
+        "modelExcerpt": "400 pcs",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "400 pcs",
+         "start": 147,
+         "end": 154,
+         "line": 5,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "TEXT",
+         "outcome": "MATCH",
+         "matches": [],
+         "note": null
+        }
+       },
+       "material": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "VERBATIM",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "specification": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "VERBATIM",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "logo": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "VERBATIM",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "unitPrice": {
+        "value": null,
+        "modelValue": "? 2.80",
+        "modelExcerpt": "@ $2.80",
+        "kind": "VERBATIM",
+        "check": "INVALID_VALUE",
+        "evidence": {
+         "excerpt": "@ $2.80",
+         "start": 155,
+         "end": 162,
+         "line": 5,
+         "occurrences": 1
+        },
+        "note": "Currency must be one of USD, SGD, CNY."
+       },
+       "match": {
+        "status": "PROPOSED",
+        "candidateIds": [
+         "pri_2691f530-43cf-450c-a301-549cbe6c4203"
+        ],
+        "rejectedIds": []
+       }
+      }
+     ],
+     "total": {
+      "value": null,
+      "modelValue": "? 1,120.00",
+      "modelExcerpt": "Total: $1,120.00",
+      "kind": "VERBATIM",
+      "check": "INVALID_VALUE",
+      "evidence": {
+       "excerpt": "Total: $1,120.00",
+       "start": 163,
+       "end": 179,
+       "line": 6,
+       "occurrences": 1
+      },
+      "note": "Currency must be one of USD, SGD, CNY."
+     },
+     "incoterm": {
+      "value": null,
+      "modelValue": null,
+      "modelExcerpt": null,
+      "kind": "VERBATIM",
+      "check": "NOT_STATED",
+      "evidence": null,
+      "note": null
+     },
+     "leadTime": {
+      "value": null,
+      "modelValue": null,
+      "modelExcerpt": null,
+      "kind": "VERBATIM",
+      "check": "NOT_STATED",
+      "evidence": null,
+      "note": null
+     },
+     "paymentTerms": {
+      "value": "to be agreed after sample approval",
+      "modelValue": "to be agreed after sample approval",
+      "modelExcerpt": "Payment: to be agreed after sample approval",
+      "kind": "VERBATIM",
+      "check": "SUPPORTED",
+      "evidence": {
+       "excerpt": "Payment: to be agreed after sample approval",
+       "start": 275,
+       "end": 318,
+       "line": 10,
+       "occurrences": 1
+      },
+      "note": null,
+      "valueCheck": {
+       "rules": "value-check-2026-10-25.1",
+       "field": "TEXT",
+       "outcome": "MATCH",
+       "matches": [],
+       "note": null
+      }
+     },
+     "fees": [
+      {
+       "kind": {
+        "value": "GOODS",
+        "modelValue": "GOODS",
+        "modelExcerpt": "Ceramic mug 350 ml, white glaze — 400 pcs @ $2.80",
+        "kind": "INTERPRETED",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Ceramic mug 350 ml, white glaze — 400 pcs @ $2.80",
+         "start": 113,
+         "end": 162,
+         "line": 5,
+         "occurrences": 1
+        },
+        "note": "The model's reading of the excerpt — check it."
+       },
+       "description": {
+        "value": "Ceramic mug 350 ml, white glaze",
+        "modelValue": "Ceramic mug 350 ml, white glaze",
+        "modelExcerpt": "Ceramic mug 350 ml, white glaze — 400 pcs @ $2.80",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Ceramic mug 350 ml, white glaze — 400 pcs @ $2.80",
+         "start": 113,
+         "end": 162,
+         "line": 5,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "TEXT",
+         "outcome": "MATCH",
+         "matches": [],
+         "note": null
+        }
+       },
+       "amount": {
+        "value": null,
+        "modelValue": "? 1,120.00",
+        "modelExcerpt": "Total: $1,120.00",
+        "kind": "VERBATIM",
+        "check": "INVALID_VALUE",
+        "evidence": {
+         "excerpt": "Total: $1,120.00",
+         "start": 163,
+         "end": 179,
+         "line": 6,
+         "occurrences": 1
+        },
+        "note": "Currency must be one of USD, SGD, CNY."
+       },
+       "amountBasis": {
+        "value": "LUMP_SUM",
+        "modelValue": "LUMP_SUM",
+        "modelExcerpt": "Total: $1,120.00",
+        "kind": "INTERPRETED",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Total: $1,120.00",
+         "start": 163,
+         "end": 179,
+         "line": 6,
+         "occurrences": 1
+        },
+        "note": "The model's reading of the excerpt — check it."
+       },
+       "payer": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "INTERPRETED",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "payee": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "INTERPRETED",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "includedInQuote": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "INTERPRETED",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "statedAs": {
+        "value": "TO_BE_CONFIRMED",
+        "modelValue": "FIRM",
+        "modelExcerpt": "Total: $1,120.00",
+        "kind": "INTERPRETED",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Total: $1,120.00",
+         "start": 163,
+         "end": 179,
+         "line": 6,
+         "occurrences": 1
+        },
+        "note": "The model read this as firm, but no amount is supported by the text — treated as to be confirmed."
+       }
+      },
+      {
+       "kind": {
+        "value": "FREIGHT",
+        "modelValue": "FREIGHT",
+        "modelExcerpt": "Freight: to be advised",
+        "kind": "INTERPRETED",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Freight: to be advised",
+         "start": 181,
+         "end": 203,
+         "line": 8,
+         "occurrences": 1
+        },
+        "note": "The model's reading of the excerpt — check it."
+       },
+       "description": {
+        "value": "Freight",
+        "modelValue": "Freight",
+        "modelExcerpt": "Freight: to be advised",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Freight: to be advised",
+         "start": 181,
+         "end": 203,
+         "line": 8,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "TEXT",
+         "outcome": "MATCH",
+         "matches": [],
+         "note": null
+        }
+       },
+       "amount": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "VERBATIM",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "amountBasis": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "INTERPRETED",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "payer": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "INTERPRETED",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "payee": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "INTERPRETED",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "includedInQuote": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "INTERPRETED",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "statedAs": {
+        "value": "TO_BE_CONFIRMED",
+        "modelValue": "TO_BE_CONFIRMED",
+        "modelExcerpt": "Freight: to be advised",
+        "kind": "INTERPRETED",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Freight: to be advised",
+         "start": 181,
+         "end": 203,
+         "line": 8,
+         "occurrences": 1
+        },
+        "note": "The model's reading of the excerpt — check it."
+       }
+      },
+      {
+       "kind": {
+        "value": "TAX_DUTY",
+        "modelValue": "TAX_DUTY",
+        "modelExcerpt": "Import duty and GST: buyer's responsibility, amount depends on customs",
+        "kind": "INTERPRETED",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Import duty and GST: buyer's responsibility, amount depends on customs",
+         "start": 204,
+         "end": 274,
+         "line": 9,
+         "occurrences": 1
+        },
+        "note": "The model's reading of the excerpt — check it."
+       },
+       "description": {
+        "value": "Import duty and GST",
+        "modelValue": "Import duty and GST",
+        "modelExcerpt": "Import duty and GST: buyer's responsibility, amount depends on customs",
+        "kind": "VERBATIM",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "Import duty and GST: buyer's responsibility, amount depends on customs",
+         "start": 204,
+         "end": 274,
+         "line": 9,
+         "occurrences": 1
+        },
+        "note": null,
+        "valueCheck": {
+         "rules": "value-check-2026-10-25.1",
+         "field": "TEXT",
+         "outcome": "MATCH",
+         "matches": [],
+         "note": null
+        }
+       },
+       "amount": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "VERBATIM",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "amountBasis": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "INTERPRETED",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "payer": {
+        "value": "BUYER",
+        "modelValue": "BUYER",
+        "modelExcerpt": "buyer's responsibility",
+        "kind": "INTERPRETED",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "buyer's responsibility",
+         "start": 225,
+         "end": 247,
+         "line": 9,
+         "occurrences": 1
+        },
+        "note": "The model's reading of the excerpt — check it."
+       },
+       "payee": {
+        "value": null,
+        "modelValue": null,
+        "modelExcerpt": null,
+        "kind": "INTERPRETED",
+        "check": "NOT_STATED",
+        "evidence": null,
+        "note": null
+       },
+       "includedInQuote": {
+        "value": "NOT_INCLUDED",
+        "modelValue": "NOT_INCLUDED",
+        "modelExcerpt": "buyer's responsibility",
+        "kind": "INTERPRETED",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "buyer's responsibility",
+         "start": 225,
+         "end": 247,
+         "line": 9,
+         "occurrences": 1
+        },
+        "note": "The model's reading of the excerpt — check it."
+       },
+       "statedAs": {
+        "value": "TO_BE_CONFIRMED",
+        "modelValue": "TO_BE_CONFIRMED",
+        "modelExcerpt": "amount depends on customs",
+        "kind": "INTERPRETED",
+        "check": "SUPPORTED",
+        "evidence": {
+         "excerpt": "amount depends on customs",
+         "start": 249,
+         "end": 274,
+         "line": 9,
+         "occurrences": 1
+        },
+        "note": "The model's reading of the excerpt — check it."
+       }
+      }
+     ],
+     "arithmetic": [
+      {
+       "code": "CANNOT_CHECK_TOTAL",
+       "message": "No total supported by the text."
+      }
+     ],
+     "costSummary": {
+      "lines": [],
+      "unknownFeeCount": 3
+     },
+     "counts": {
+      "SUPPORTED": 17,
+      "NOT_STATED": 18,
+      "NO_EXCERPT": 0,
+      "NOT_IN_TEXT": 0,
+      "ONLY_IN_CONTEXT": 0,
+      "VALUE_NOT_IN_EXCERPT": 0,
+      "SUSPICIOUS_EXCERPT": 0,
+      "INVALID_VALUE": 3,
+      "AMBIGUOUS_VALUE": 0
+     }
+    },
+    "rawOutput": "{\n  \"supplierQuoteNumbers\": [\n    {\n      \"value\": \"LA-005\",\n      \"quote\": \"Quotation No.: LA-005\"\n    }\n  ],\n  \"quoteDate\": {\n    \"value\": null,\n    \"quote\": null\n  },\n  \"currency\": {\n    \"value\": null,\n    \"quote\": null\n  },\n  \"items\": [\n    {\n      \"name\": {\n        \"value\": \"Ceramic mug 350 ml, white glaze\",\n        \"quote\": \"Ceramic mug 350 ml, white glaze\"\n      },\n      \"quantity\": {\n        \"value\": \"400\",\n        \"quote\": \"400 pcs\"\n      },\n      \"unit\": {\n        \"value\": \"pcs\",\n        \"quote\": \"400 pcs\"\n      },\n      \"material\": {\n        \"value\": null,\n        \"quote\": null\n      },\n      \"specification\": {\n        \"value\": null,\n        \"quote\": null\n      },\n      \"logo\": {\n        \"value\": null,\n        \"quote\": null\n      },\n      \"unitPrice\": {\n        \"amount\": \"2.80\",\n        \"currency\": null,\n        \"quote\": \"@ $2.80\"\n      },\n      \"requestItemCandidates\": [\n        \"pri_2691f530-43cf-450c-a301-549cbe6c4203\"\n      ]\n    }\n  ],\n  \"total\": {\n    \"amount\": \"1,120.00\",\n    \"currency\": null,\n    \"quote\": \"Total: $1,120.00\"\n  },\n  \"incoterm\": {\n    \"value\": null,\n    \"quote\": null\n  },\n  \"leadTime\": {\n    \"value\": null,\n    \"quote\": null\n  },\n  \"paymentTerms\": {\n    \"value\": \"to be agreed after sample approval\",\n    \"quote\": \"Payment: to be agreed after sample approval\"\n  },\n  \"fees\": [\n    {\n      \"kind\": {\n        \"value\": \"GOODS\",\n        \"quote\": \"Ceramic mug 350 ml, white glaze — 400 pcs @ $2.80\"\n      },\n      \"description\": {\n        \"value\": \"Ceramic mug 350 ml, white glaze\",\n        \"quote\": \"Ceramic mug 350 ml, white glaze — 400 pcs @ $2.80\"\n      },\n      \"amount\": {\n        \"amount\": \"1,120.00\",\n        \"currency\": null,\n        \"quote\": \"Total: $1,120.00\"\n      },\n      \"amountBasis\": {\n        \"value\": \"LUMP_SUM\",\n        \"quote\": \"Total: $1,120.00\"\n      },\n      \"payer\": {\n        \"value\": null,\n        \"quote\": null\n      },\n      \"payee\": {\n        \"value\": null,\n        \"quote\": null\n      },\n      \"includedInQuote\": {\n        \"value\": null,\n        \"quote\": null\n      },\n      \"statedAs\": {\n        \"value\": \"FIRM\",\n        \"quote\": \"Total: $1,120.00\"\n      }\n    },\n    {\n      \"kind\": {\n        \"value\": \"FREIGHT\",\n        \"quote\": \"Freight: to be advised\"\n      },\n      \"description\": {\n        \"value\": \"Freight\",\n        \"quote\": \"Freight: to be advised\"\n      },\n      \"amount\": {\n        \"amount\": null,\n        \"currency\": null,\n        \"quote\": null\n      },\n      \"amountBasis\": {\n        \"value\": null,\n        \"quote\": null\n      },\n      \"payer\": {\n        \"value\": null,\n        \"quote\": null\n      },\n      \"payee\": {\n        \"value\": null,\n        \"quote\": null\n      },\n      \"includedInQuote\": {\n        \"value\": null,\n        \"quote\": null\n      },\n      \"statedAs\": {\n        \"value\": \"TO_BE_CONFIRMED\",\n        \"quote\": \"Freight: to be advised\"\n      }\n    },\n    {\n      \"kind\": {\n        \"value\": \"TAX_DUTY\",\n        \"quote\": \"Import duty and GST: buyer's responsibility, amount depends on customs\"\n      },\n      \"description\": {\n        \"value\": \"Import duty and GST\",\n        \"quote\": \"Import duty and GST: buyer's responsibility, amount depends on customs\"\n      },\n      \"amount\": {\n        \"amount\": null,\n        \"currency\": null,\n        \"quote\": null\n      },\n      \"amountBasis\": {\n        \"value\": null,\n        \"quote\": null\n      },\n      \"payer\": {\n        \"value\": \"BUYER\",\n        \"quote\": \"buyer's responsibility\"\n      },\n      \"payee\": {\n        \"value\": null,\n        \"quote\": null\n      },\n      \"includedInQuote\": {\n        \"value\": \"NOT_INCLUDED\",\n        \"quote\": \"buyer's responsibility\"\n      },\n      \"statedAs\": {\n        \"value\": \"TO_BE_CONFIRMED\",\n        \"quote\": \"amount depends on customs\"\n      }\n    }\n  ]\n}"
+   }
+  }
+ }
+}

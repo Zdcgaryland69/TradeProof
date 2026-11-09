@@ -1,0 +1,48 @@
+{
+  "_notice": "SYNTHETIC / DEMO — MOCK model output, hand-written for supplier-quote-zh.synthetic.md. Used only when AI_PROVIDER=mock (local dev) and in tests. Not produced by any AI.",
+  "textSha256": "e9765ed4d595bb3f469642b17a09b2a854a21f36d6200cc79359066944d70ba5",
+  "matchNamePattern": "bottle|保温杯",
+  "output": {
+    "supplierQuoteNumbers": [{ "value": "QT-DEMO-2026-118", "quote": "报价编号：QT-DEMO-2026-118" }],
+    "quoteDate": { "value": "2026-10-15", "quote": "日期：2026-10-15" },
+    "currency": { "value": "CNY", "quote": "| 单价 | 人民币 24.50 元 / 个 |" },
+    "items": [
+      {
+        "name": { "value": "不锈钢保温杯", "quote": "| 品名 | 不锈钢保温杯 |" },
+        "quantity": { "value": "480", "quote": "| 数量 | 480 个 |" },
+        "unit": { "value": "个", "quote": "| 数量 | 480 个 |" },
+        "material": { "value": "201 不锈钢", "quote": "| 材质 | 201 不锈钢 |" },
+        "specification": { "value": "500 毫升", "quote": "| 容量 | 500 毫升 |" },
+        "logo": { "value": "丝印 1 色", "quote": "| Logo | 丝印 1 色 |" },
+        "unitPrice": { "amount": "24.50", "currency": "CNY", "quote": "| 单价 | 人民币 24.50 元 / 个 |" },
+        "requestItemCandidates": []
+      }
+    ],
+    "total": { "amount": "11,760.00", "currency": "CNY", "quote": "| 总价 | 人民币 11,760.00 元 |" },
+    "incoterm": { "value": "FOB 宁波", "quote": "| 贸易条款 | FOB 宁波 |" },
+    "leadTime": { "value": "收到定金后 35 天", "quote": "| 交期 | 收到定金后 35 天 |" },
+    "paymentTerms": { "value": "50% 定金，50% 发货前付清", "quote": "| 付款方式 | 50% 定金，50% 发货前付清 |" },
+    "fees": [
+      {
+        "kind": { "value": "PACKAGING", "quote": "价格不含出口包装升级费用" },
+        "description": { "value": "出口包装升级费用", "quote": "价格不含出口包装升级费用" },
+        "amount": null,
+        "amountBasis": null,
+        "payer": null,
+        "payee": null,
+        "includedInQuote": { "value": "NOT_INCLUDED", "quote": "价格不含出口包装升级费用" },
+        "statedAs": { "value": "TO_BE_CONFIRMED", "quote": "价格不含出口包装升级费用" }
+      },
+      {
+        "kind": { "value": "OTHER", "quote": "激光雕刻 Logo 每个另加人民币 1.20 元。" },
+        "description": { "value": "激光雕刻 Logo 每个另加人民币 1.20 元", "quote": "激光雕刻 Logo 每个另加人民币 1.20 元。" },
+        "amount": { "amount": "1.20", "currency": "CNY", "quote": "激光雕刻 Logo 每个另加人民币 1.20 元。" },
+        "amountBasis": { "value": "PER_UNIT", "quote": "激光雕刻 Logo 每个另加人民币 1.20 元。" },
+        "payer": null,
+        "payee": null,
+        "includedInQuote": { "value": "NOT_INCLUDED", "quote": "激光雕刻 Logo 每个另加人民币 1.20 元。" },
+        "statedAs": { "value": "FIRM", "quote": "激光雕刻 Logo 每个另加人民币 1.20 元。" }
+      }
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "name": "tradeproof",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "description": "TradeProof - cross-border procurement review and payment assistant (PayPal AI Hackathon prototype, Sandbox only)",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "dev": "next dev -H 127.0.0.1",
+    "build": "next build",
+    "start": "next start -H 127.0.0.1",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test \"tests/**/*.test.ts\"",
+    "check:sandbox": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/check-sandbox-config.mts",
+    "e2e:conflict": "node scripts/e2e/edit-conflict.e2e.mjs",
+    "e2e:quotes": "node scripts/e2e/quotes.e2e.mjs",
+    "e2e:extraction": "node scripts/e2e/extraction.e2e.mjs",
+    "e2e:history": "node scripts/e2e/history.e2e.mjs",
+    "e2e:25oct": "node scripts/e2e/search-budget.e2e.mjs",
+    "e2e:compare": "node scripts/e2e/comparison.e2e.mjs",
+    "diag:budget-threads": "node scripts/diag-budget-threads.mjs",
+    "e2e:clarify": "node scripts/e2e/clarification.e2e.mjs",
+    "e2e:replies": "node scripts/e2e/replies.e2e.mjs",
+    "e2e:approval": "node scripts/e2e/approval.e2e.mjs",
+    "e2e:approval-pay": "node scripts/e2e/approval-payment.e2e.mjs",
+    "accounts:setup": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/setup-accounts.mjs",
+    "accounts:reset-password": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/reset-password.mjs",
+    "accounts:seed-demo": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/seed-access-demo.mjs",
+    "e2e:access": "node scripts/e2e/access.e2e.mjs",
+    "e2e:usability": "node scripts/e2e/usability.e2e.mjs",
+    "mock:check": "node scripts/local-mock.mjs check",
+    "mock:accounts": "node scripts/local-mock.mjs accounts",
+    "mock:reset-password": "node scripts/local-mock.mjs reset-password",
+    "mock:seed": "node scripts/local-mock.mjs seed",
+    "mock:seed-base": "node scripts/local-mock.mjs seed-base",
+    "mock:start": "node scripts/local-mock.mjs start",
+    "mock:close": "node scripts/local-mock.mjs close"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "1.3.0",
+    "@paypal/paypal-server-sdk": "2.5.0",
+    "next": "16.4.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.2",
+    "typescript": "^5"
+  },
+  "overrides": {
+    "follow-redirects": "1.16.2"
+  }
+}

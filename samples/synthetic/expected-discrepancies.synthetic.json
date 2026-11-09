@@ -1,0 +1,55 @@
+{
+  "_notice": "SYNTHETIC / DEMO DATA — expected findings for later automated tests",
+  "request_id": "PR-DEMO-0001",
+  "quote_id": "QT-DEMO-2026-118",
+  "findings": [
+    {
+      "field": "material",
+      "request": "304 stainless steel",
+      "quote_zh": "201 不锈钢",
+      "quote_en": "stainless steel (grade not stated)",
+      "severity": "high",
+      "type": "spec_mismatch"
+    },
+    {
+      "field": "logo",
+      "request": "Laser engraving, 1 colour",
+      "quote_zh": "丝印 1 色；激光雕刻另加 RMB 1.20/个",
+      "quote_en": "printed, 1 colour",
+      "severity": "medium",
+      "type": "spec_mismatch_with_extra_cost"
+    },
+    {
+      "field": "quantity",
+      "request": 500,
+      "quote_zh": 480,
+      "quote_en": 500,
+      "severity": "high",
+      "type": "quantity_mismatch_between_languages"
+    },
+    {
+      "field": "currency_and_amount",
+      "request": "USD, max 3.60/pc",
+      "quote_zh": "CNY 24.50/pc, total CNY 11,760.00",
+      "quote_en": "USD 3.40/pc",
+      "severity": "high",
+      "type": "currency_mismatch_needs_confirmation"
+    },
+    {
+      "field": "lead_time",
+      "request": "ship by 2026-12-10",
+      "quote_zh": "35 days after deposit",
+      "quote_en": "about 30 days",
+      "severity": "medium",
+      "type": "lead_time_inconsistent"
+    },
+    {
+      "field": "payment_terms",
+      "request": "30% deposit, 70% before shipment",
+      "quote_zh": "50% 定金，50% 发货前",
+      "quote_en": "30% deposit, balance before shipment",
+      "severity": "high",
+      "type": "payment_terms_mismatch_between_languages"
+    }
+  ]
+}
