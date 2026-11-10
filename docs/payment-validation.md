@@ -215,15 +215,20 @@ This phase confirms payments by **server-side GET of the order** only. No public
 - Procurement approval before payment (the demo pays a fixed test item directly).
 - PayPal's idempotency retention: the Orders v2 spec states 6 hours (extendable to 72 h via an account manager); the app retries automatically only within 5 h and otherwise hands over to manual review. The real expiry behaviour was not tested.
 
-## 8. Approval payments (30 Oct 2026) — MOCK-tested only
+## 8. Approval payments — MOCK tests, plus one historical real Sandbox run
 
-Payments of in-app approvals reuse this module (`docs/approval-design.md` §15–16). Evidence so far, kept apart:
+Payments of in-app approvals reuse this module (`docs/approval-design.md` §15–16). Most evidence below is MOCK; **one**
+payment ran against the real PayPal Sandbox, on 30 Oct 2026, on the development version of that day. Each row names its
+environment and the version it ran on; the rows are kept apart and do not add up to "verified in the real Sandbox" for
+any later version. Development commits are from the author's local history (the public repository is a single-commit
+export, so they cannot be looked up there).
 
-| Evidence | What it covers | Real Sandbox? |
-| --- | --- | --- |
-| Unit tests `tests/approval-payment.test.ts` (12) + `tests/approval.test.ts` payment part (5) | valid → PAID; invalid / revoked refused; tampering; basis change between order and capture; parallel requests; unknown capture / create outcomes never re-sent; restart recovery; switch rules; MOCK gateway | No — MOCK gateway |
-| Browser `npm run e2e:approval-pay` on a DB **copy** (MOCK mode): 11/11, then 5/5 after a dev-server restart | page flow: approve → record → order → simulated buyer approval → capture (double clicks) → PAID; invalid after order; unknown capture; reload / restart | No — MOCK, no PayPal request |
-| Local HTTP probe on the main DB, switch off | 4 payment steps → 409 `PAYMENTS_NOT_ENABLED`; MOCK route 404; DB unchanged | No call |
-| Real Sandbox payment of an approval | PR-F9B23762, USD 12.00 (30 Oct evening, authorised): owner saw PAID; app VERIFIED_PAID; independent Orders GET + capture GET 17/17; repeats reused the record; restart kept it | **Yes — one run** (MOCK extraction basis) |
+| Evidence | What it covers | Environment | Version / date |
+| --- | --- | --- | --- |
+| Unit tests `tests/approval-payment.test.ts` + payment part of `tests/approval.test.ts` | valid → PAID; invalid / revoked refused; tampering; basis change between order and capture; parallel requests; unknown capture / create outcomes never re-sent; restart recovery; switch rules; MOCK gateway | **MOCK** gateway (no network) | written 30 Oct 2026 (12 + 5 tests at that time); re-run with every later change |
+| Unit tests: capture race after an unknown outcome (V1, V4 — deterministic gate) | request A waits for its pre-capture order lookup while request B's capture ends with an unknown outcome; A must send nothing (one capture request in total); unknown stays unknown, a read-only check records a capture PayPal shows | **MOCK** gateway (no network) | added 10 Nov 2026 with the fix; **not run against the real Sandbox** |
+| Browser `npm run e2e:approval-pay` on a DB **copy** (MOCK mode): 11/11, then 5/5 after a dev-server restart | page flow: approve → record → order → simulated buyer approval → capture (double clicks) → PAID; invalid after order; unknown capture; reload / restart | **MOCK**, no PayPal request | first 30 Oct 2026; re-run on later release candidates (e.g. 9 and 10 Nov 2026) |
+| Local HTTP probe on the main DB, switch off | 4 payment steps → 409 `PAYMENTS_NOT_ENABLED`; MOCK route 404; DB unchanged | no PayPal call | 30 Oct 2026 |
+| Real Sandbox payment of an approval | PR-F9B23762, USD 12.00 (authorised by the owner): owner saw PAID; app VERIFIED_PAID; independent Orders GET + capture GET 17/17; repeats reused the record; restart kept it | **real PayPal Sandbox — one run** (extraction in that record was MOCK) | 30 Oct 2026, evening; development commit `fce6dc9`. **Not repeated** on later versions (for example the approver-grant fix of 31 Oct 2026 or the capture-race fix of 10 Nov 2026) |
 
 Until the owner's authorisation on 30 Oct evening no PayPal request was made that day. The authorised run then made: token(s), 1 create, 1 capture, order GETs (app 2, independent 1, reconcile 1) and 1 capture GET (independent). Details: `docs/setup-status.md` "30 Oct 2026 (evening) — real PayPal Sandbox payment".

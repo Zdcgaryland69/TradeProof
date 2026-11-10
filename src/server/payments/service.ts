@@ -399,7 +399,14 @@ export class PaymentService {
     const nowMs = this.now().getTime();
     // Persist the capture request id BEFORE calling PayPal; COALESCE keeps an existing one, so a
     // retry after an unknown outcome reuses the same PayPal-Request-Id.
-    const captureGuard = { from: ["ORDER_CREATED", "CAPTURE_UNKNOWN"] as RecordStatus[], staleLeaseStatus: "CAPTURING" as const, nowMs };
+    // noResendAfterUnknown (approval payments, 10 Nov fix): the claim itself admits ONLY ORDER_CREATED. `rec` was read
+    // before an awaited PayPal lookup and may be stale; the atomic UPDATE … WHERE status = 'ORDER_CREATED' below is the
+    // check that counts, so a request that waited while another capture ended CAPTURE_UNKNOWN (or is CAPTURING) loses
+    // the claim and sends nothing. Without the option (minimal Sandbox loop) a retry from CAPTURE_UNKNOWN / a stale
+    // CAPTURING with the same PayPal-Request-Id stays allowed, as before.
+    const captureGuard = opts.noResendAfterUnknown
+      ? { from: ["ORDER_CREATED"] as RecordStatus[], nowMs }
+      : { from: ["ORDER_CREATED", "CAPTURE_UNKNOWN"] as RecordStatus[], staleLeaseStatus: "CAPTURING" as const, nowMs };
     const capturePatch = {
       status: "CAPTURING" as const,
       captureRequestId: this.newId(),
@@ -421,6 +428,17 @@ export class PaymentService {
     if (outcome !== "WON") {
       const current = this.store.get(id)!;
       if (current.status === "PAID") return this.result(true, "ALREADY_PAID", "Already paid; no second capture.", id);
+      if (opts.noResendAfterUnknown && current.status === "CAPTURE_UNKNOWN") {
+        // Another request's capture ended with an unknown outcome while this one waited: never send it again.
+        // The stored request id and status are left as they are; only a read-only check can settle it.
+        this.store.logEvent(id, "CAPTURE_NOT_RESENT", { status: current.status, reason: "STATE_CHANGED_BEFORE_CLAIM" }, this.iso());
+        return this.result(
+          false,
+          "CAPTURE_UNKNOWN",
+          "Another capture request for this payment has an unknown outcome, so TradeProof does not send a capture again. Check the payment status later (read-only). Do not pay again.",
+          id,
+        );
+      }
       return this.result(false, "IN_PROGRESS", `Capture not started: record is ${current.status}.`, id);
     }
     const claimed = this.store.get(id)!;

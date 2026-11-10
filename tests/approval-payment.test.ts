@@ -325,6 +325,112 @@ describe("approval payment: duplicates, unknown outcomes, restart (MOCK PayPal)"
   });
 });
 
+// L4 (10 Nov review): request A reads the record (ORDER_CREATED) and waits for its pre-capture order lookup; meanwhile
+// request B captures and ends CAPTURE_UNKNOWN. A must not send a capture when it resumes, even with the same
+// PayPal-Request-Id. Deterministic: A's first getOrder is held at a gate (no timing races). MOCK PayPal only.
+describe("approval payment: capture race after an unknown outcome (deterministic gate, MOCK PayPal)", () => {
+  /** Holds the NEXT getOrder call (request A's) until release(). late-read: reads after release; late-response:
+   * reads at once (before B) and delivers the stale snapshot after release. */
+  function gateNextGetOrder(w: World, mode: "late-read" | "late-response") {
+    const m = mock(w);
+    const original = m.getOrder.bind(m);
+    let release!: () => void;
+    const gate = new Promise<void>((r) => (release = r));
+    let reached!: () => void;
+    const atGate = new Promise<void>((r) => (reached = r));
+    let armed = true;
+    m.getOrder = async (orderId) => {
+      if (!armed) return original(orderId);
+      armed = false;
+      if (mode === "late-response") {
+        const snapshot = await original(orderId);
+        reached();
+        await gate;
+        return snapshot;
+      }
+      reached();
+      await gate;
+      return original(orderId);
+    };
+    return { atGate, release };
+  }
+
+  async function orderReady(w: World) {
+    const a = await approvedA(w);
+    w.approvals.startPayment(P, a.s.request.id, a.approvalId);
+    const o = result(await w.approvals.createOrder(P, a.s.request.id, a.approvalId));
+    mock(w).approve(o.orderId!);
+    return { ...a, orderId: o.orderId! };
+  }
+
+  const recordOf = (w: World, requestId: string, approvalId: string) => {
+    const id = w.approvals.paymentReadiness(P, requestId, approvalId)!.payments[0].recordId;
+    return w.payments.getRecord(id)!;
+  };
+
+  test("V1 — B's capture never reached PayPal: one capture request in total; A sends nothing; Check stays CAPTURE_UNKNOWN (blocked, not PAID / FAILED)", async () => {
+    const w = world();
+    const { s, approvalId, orderId } = await orderReady(w);
+    const g = gateNextGetOrder(w, "late-read");
+    const pA = w.approvals.capture(P, s.request.id, approvalId, orderId);
+    await g.atGate;
+    mock(w).captureFaults.push("timeout-before-processing");
+    const b = result(await w.approvals.capture(P, s.request.id, approvalId, orderId));
+    assert.equal(b.code, "CAPTURE_UNKNOWN");
+    const requestIdAfterB = recordOf(w, s.request.id, approvalId).captureRequestId;
+    assert.ok(requestIdAfterB);
+    g.release();
+    const a = result(await pA);
+
+    assert.equal(mock(w).calls.capture.length, 1, "A must not send a capture after B's outcome became unknown");
+    assert.equal(a.code, "CAPTURE_UNKNOWN");
+    assert.match((a as unknown as { message: string }).message, /does not send a capture again/);
+    assert.match((a as unknown as { message: string }).message, /Do not pay again/);
+    const rec = recordOf(w, s.request.id, approvalId);
+    assert.equal(rec.status, "CAPTURE_UNKNOWN", "neither PAID nor FAILED is invented");
+    assert.equal(rec.captureRequestId, requestIdAfterB, "the stored PayPal-Request-Id is not reset");
+
+    const check = result(await w.approvals.reconcile(P, s.request.id, approvalId));
+    assert.deepEqual([check.code, check.record.status], ["CAPTURE_UNKNOWN", "CAPTURE_UNKNOWN"]);
+    assert.equal(mock(w).calls.capture.length, 1, "Check (read-only) sends no capture");
+    assert.equal(mock(w).totalCaptures(), 0, "nothing was paid");
+    assert.equal(w.approvals.paymentReadiness(P, s.request.id, approvalId)!.payments[0].status, "CAPTURE_UNKNOWN", "payment stays blocked");
+  });
+
+  test("V4 — B's capture reached PayPal but both its response and its follow-up read were lost: one capture request; A sends nothing; Check finds the capture → PAID", async () => {
+    const w = world();
+    const { s, approvalId, orderId } = await orderReady(w);
+    const g = gateNextGetOrder(w, "late-response"); // A's snapshot is read before B's capture lands
+    const pA = w.approvals.capture(P, s.request.id, approvalId, orderId);
+    await g.atGate;
+    mock(w).captureFaults.push("timeout-after-processing");
+    const capture = mock(w).captureOrder.bind(mock(w));
+    mock(w).captureOrder = async (id, requestId) => {
+      try {
+        return await capture(id, requestId);
+      } finally {
+        mock(w).getFailures = 1; // B's own verification read fails too
+      }
+    };
+    const b = result(await w.approvals.capture(P, s.request.id, approvalId, orderId));
+    assert.equal(b.code, "CAPTURE_UNKNOWN");
+    const requestIdAfterB = recordOf(w, s.request.id, approvalId).captureRequestId;
+    g.release();
+    const a = result(await pA);
+
+    assert.equal(mock(w).calls.capture.length, 1, "A must not send a capture after B's outcome became unknown");
+    assert.equal(a.code, "CAPTURE_UNKNOWN");
+    const before = recordOf(w, s.request.id, approvalId);
+    assert.equal(before.status, "CAPTURE_UNKNOWN", "not marked PAID before PayPal has been read");
+    assert.equal(before.captureRequestId, requestIdAfterB);
+
+    const check = result(await w.approvals.reconcile(P, s.request.id, approvalId));
+    assert.deepEqual([check.code, check.record.status], ["PAID", "PAID"], "a read-only check records the capture PayPal shows");
+    assert.equal(mock(w).calls.capture.length, 1);
+    assert.equal(mock(w).totalCaptures(), 1);
+  });
+});
+
 describe("approval payment: switch, MOCK gateway, MOCK-only route", () => {
   test("switch: off by default; sandbox only on the main database; mock only on another file; anything else refused", () => {
     const main = join(dir, "data", "main.sqlite");
