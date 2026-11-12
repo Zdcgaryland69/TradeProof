@@ -1,6 +1,12 @@
 # YouTube publishing material — DRAFT for the author's review (9 Nov 2026, SGT)
 
-Status: **published publicly on 9 Nov 2026** on the author's channel — https://youtu.be/UOTZpzaLUCY (publication record below).
+Status: **current video v4, published 12 Nov 2026** — https://youtu.be/1QTFvvWgORY (2:50, 1920×1080; file
+`tradeproof-demo-v4-2026-11-12.mp4`, SHA-256 `3993c8dc9498292542bdaecff4bbc3e1c82f9cd6c9f379e4ba3ca84263f2b406`;
+English captions `tradeproof-demo-v4-2026-11-12.srt`, 40 cues). Same title, cover A and settings as below; the
+description has new chapter times, names the synthetic Copilot character voice and credits the CC0 music
+("Wandering" by Andrewkn, Freesound 455855). Still MOCK only. The earlier video below stays online.
+
+Earlier video: **published publicly on 9 Nov 2026** on the author's channel — https://youtu.be/UOTZpzaLUCY (publication record below).
 
 ## Video and captions (final, accepted by the author on 9 Nov 2026)
 

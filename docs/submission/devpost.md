@@ -6,7 +6,7 @@ Section headings below are Devpost's standard form prompts; TradeProof is a one-
 - **Project name:** TradeProof
 - **Tagline (≤ 60 chars):** Check quotes, approve exact terms, pay via PayPal Sandbox
 - **Repository:** https://github.com/Zdcgaryland69/TradeProof
-- **Video:** https://youtu.be/UOTZpzaLUCY
+- **Video:** https://youtu.be/1QTFvvWgORY (v4, 12 Nov 2026; replaced the 9 Nov video https://youtu.be/UOTZpzaLUCY, which stays online)
 - **Built with:** PayPal Developer Platform (Sandbox, Orders v2, `@paypal/paypal-server-sdk`), Anthropic Claude API
   (`@anthropic-ai/sdk`, model `claude-sonnet-5-5`), Next.js, React, TypeScript, SQLite (`node:sqlite`), Node.js
 - **Sponsor tools selected:** none (author's decision, 9 Nov 2026). *Author note, not for the form:* the official PayPal

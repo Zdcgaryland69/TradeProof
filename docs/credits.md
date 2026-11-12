@@ -59,18 +59,19 @@ The video file itself is published separately (YouTube), not in this repository.
 
 | Item | Version / source | Licence / terms (as read) | Use |
 | --- | --- | --- | --- |
-| Screen footage | recorded from TradeProof (MOCK database, SYNTHETIC data), 8–9 Nov 2026 | the author's own material | all app scenes |
+| Screen footage and screenshots | recorded from TradeProof (MOCK databases, SYNTHETIC data), 8–9 and 11 Nov 2026 | the author's own material | all app scenes |
 | Remotion (`remotion`, `@remotion/cli`, `@remotion/media`) | 4.0.538 | Remotion License — Free License tier (individual); source-available, not open source | video editing / rendering |
 | FFmpeg (bundled with Remotion's compositor) | n7.1 build in `@remotion/compositor-win32-x64-msvc` 4.0.538 | GPL build (libx264) | encoding, used locally; not redistributed |
 | React, TypeScript (video project) | 19.1.1, 5.9.2 | MIT, Apache-2.0 | composition code |
-| Voice: Kokoro-82M (ONNX v1.0 export) | `hexgrad/Kokoro-82M`; ONNX from `onnx-community/Kokoro-82M-v1.0-ONNX` @ `1939ad2a`; voice `af_heart` | Apache-2.0 (as stated in the model card) | offline text-to-speech narration (synthetic voice) |
+| Voice: Kokoro-82M (ONNX v1.0 export) | `hexgrad/Kokoro-82M`; ONNX from `onnx-community/Kokoro-82M-v1.0-ONNX` @ `1939ad2a`; voices `af_heart` (narrator) and `af_sky` at speed 1.05 (Copilot character, video v4) | Apache-2.0 (as stated in the model card) | offline text-to-speech narration and character voice (synthetic voices) |
 | kokoro-onnx | 0.6.1 | MIT | local TTS runtime |
 | onnxruntime | 1.31.1 | MIT | local inference |
 | phonemizer; espeak-ng (via `espeakng-loader` 0.2.4) | 3.6.0 | GPL-3.0-or-later (phonemizer, espeak-ng); loader MIT | text → phonemes only, run locally; not redistributed |
 | Fonts | Windows system fonts (Segoe UI) at render time | system fonts, not bundled | on-screen text |
-| Music, stock images, stock footage | none used | — | — |
+| Music (video v4, 12 Nov 2026) | "Wandering" by Andrewkn, Freesound sound 455855 — https://freesound.org/people/Andrewkn/sounds/455855/ (Freesound HQ MP3 preview, SHA-256 `d1f043ac6c2f9ef6899ee03ff3fb48121fe17d2d0539017fa5e3a851ccb931b7`; licence read on the sound page 12 Nov 2026) | CC0 1.0 (public-domain dedication; no attribution required — credited anyway) | background music |
+| Stock images, stock footage | none used | — | — |
 
-The narration voice is synthetic (Kokoro), not a recording of a person. PayPal and Claude appear in the video only
+The narration and the Copilot character's voice are synthetic (Kokoro), not recordings of a person; the Copilot character is drawn in code. PayPal and Claude appear in the video only
 as the names of the services the project integrates with.
 
 ## 6. Development tools (not shipped)

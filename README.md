@@ -8,7 +8,7 @@ canned AI output, no API keys, no external calls. With your own keys, TradeProof
 Claude model and the real PayPal **Sandbox** (see [Modes at a glance](#modes-at-a-glance)). Payments are PayPal
 Sandbox only: no real money and no PayPal **Live** (production) code path.
 
-> Demo video: [TradeProof — MOCK demo on YouTube](https://youtu.be/UOTZpzaLUCY) · Repository: <https://github.com/Zdcgaryland69/TradeProof> · Licence: [MIT](LICENSE) · Third-party notices:
+> Demo video: [TradeProof — MOCK demo on YouTube](https://youtu.be/1QTFvvWgORY) · Repository: <https://github.com/Zdcgaryland69/TradeProof> · Licence: [MIT](LICENSE) · Third-party notices:
 > [`docs/credits.md`](docs/credits.md)
 
 ## The problem
